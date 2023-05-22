@@ -1,0 +1,6 @@
+framework module Pods_IronsourceCustomSDK {
+  umbrella header "Pods-IronsourceCustomSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}

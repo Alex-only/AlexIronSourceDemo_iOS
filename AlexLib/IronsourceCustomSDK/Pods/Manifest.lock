@@ -1,0 +1,22 @@
+PODS:
+  - AnyThinkiOS (6.2.15):
+    - AnyThinkiOS/AnyThinkSDK (= 6.2.15)
+  - AnyThinkiOS/AnyThinkSDK (6.2.15)
+  - IronSourceSDK (7.3.0.0)
+
+DEPENDENCIES:
+  - AnyThinkiOS (= 6.2.15)
+  - IronSourceSDK
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - AnyThinkiOS
+    - IronSourceSDK
+
+SPEC CHECKSUMS:
+  AnyThinkiOS: 9c7d9e2664ef901f7654e8ee96a69ac0da6f2240
+  IronSourceSDK: 70d098472ea63fa8d58e47ad79ad761ad256ce15
+
+PODFILE CHECKSUM: a63c4f26d88e7e0a18c4449fdfbec0453a9e2265
+
+COCOAPODS: 1.11.3
