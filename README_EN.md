@@ -1,4 +1,4 @@
-# AlexMaxDemo_iOS
+# AlexIronsourceDemo_iOS
 
 # integration
 
@@ -10,7 +10,7 @@ Please refer to [TopOn SDK Integration Documentation](https://docs.toponad.com/#
 
 ## 2. Introduce Alex Adapter
 
-1. Drag the code under the Max folder into the project
+1. Drag the code under the Ironsource folder into the project
 
 <img width="987" alt="screenshot 2023-02-08 13 52 41" src="https://user-images.githubusercontent.com/124124788/217446269-c866b212-242a-425a-814a-f7aa14571be8.png ">
 
@@ -37,7 +37,7 @@ Please refer to [TopOn SDK Integration Documentation](https://docs.toponad.com/#
 
 
 2. Choose "Custom Network". Fill in Network Name/Account Name and Adapter's class names according to the contents above.
-*Network Name needs to contain Max to distinguish the Network. Example: Max_XXXXX,
+*Network Name needs to contain Ironsource to distinguish the Network. Example: Ironsource_XXXXX,
 
 ![2](https://user-images.githubusercontent.com/124124788/222124025-dd7700ad-3190-4c30-a63f-2c82e13005bb.png)
 
