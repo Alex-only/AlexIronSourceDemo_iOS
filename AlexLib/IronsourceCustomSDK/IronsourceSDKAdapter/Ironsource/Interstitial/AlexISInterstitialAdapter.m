@@ -7,14 +7,14 @@
 #import <AnyThinkSDK/AnyThinkSDK.h>
 
 
-NSString *const kATIronSourceInterstitialNotificationLoaded = @"com.anythink.kATIronSourceInterstitialNotificationLoaded";
-NSString *const kATIronSourceInterstitialNotificationLoadFailed = @"com.anythink.kATIronSourceInterstitialNotificationLoadFailed";
-NSString *const kATIronSourceInterstitialNotificationShow = @"com.anythink.kATIronSourceInterstitialNotificationShow";
-NSString *const kATIronSourceInterstitialNotificationClick = @"com.anythink.kATIronSourceInterstitialNotificationClick";
-NSString *const kATIronSourceInterstitialNotificationClose = @"com.anythink.kATIronSourceInterstitialNotificationClose";
+NSString *const kAlexIronSourceInterstitialNotificationLoaded = @"com.alex.kAlexIronSourceInterstitialNotificationLoaded";
+NSString *const kAlexIronSourceInterstitialNotificationLoadFailed = @"com.alex.kAlexIronSourceInterstitialNotificationLoadFailed";
+NSString *const kAlexIronSourceInterstitialNotificationShow = @"com.alex.kAlexIronSourceInterstitialNotificationShow";
+NSString *const kAlexIronSourceInterstitialNotificationClick = @"com.alex.kAlexIronSourceInterstitialNotificationClick";
+NSString *const kAlexIronSourceInterstitialNotificationClose = @"com.alex.kAlexIronSourceInterstitialNotificationClose";
 
-NSString *const kATIronSourceInterstitialNotificationUserInfoInstanceID = @"instance_id";
-NSString *const kATIronSourceInterstitialNotificationUserInfoError = @"error";
+NSString *const kAlexIronSourceInterstitialNotificationUserInfoInstanceID = @"instance_id";
+NSString *const kAlexIronSourceInterstitialNotificationUserInfoError = @"error";
 
 @interface ATIronSourceInterstitialDelegate:NSObject<ISDemandOnlyInterstitialDelegate>
 @end
@@ -31,23 +31,23 @@ NSString *const kATIronSourceInterstitialNotificationUserInfoError = @"error";
 #pragma mark - demand only
 - (void)interstitialDidLoad:(NSString *)instanceId {
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:kATIronSourceInterstitialNotificationLoaded object:nil userInfo:@{kATIronSourceInterstitialNotificationUserInfoInstanceID:instanceId != nil ? instanceId : @""}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kAlexIronSourceInterstitialNotificationLoaded object:nil userInfo:@{kAlexIronSourceInterstitialNotificationUserInfoInstanceID:instanceId != nil ? instanceId : @""}];
 }
 
 - (void)interstitialDidFailToLoadWithError:(NSError *)error instanceId:(NSString *)instanceId {
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:kATIronSourceInterstitialNotificationLoadFailed object:nil userInfo:@{kATIronSourceInterstitialNotificationUserInfoInstanceID:instanceId != nil ? instanceId : @"", kATIronSourceInterstitialNotificationUserInfoError:error != nil ? error : [NSError errorWithDomain:@"com.anythink.IronSrouceInterstitialLoading" code:10001 userInfo:@{NSLocalizedDescriptionKey:@"AnyThinkSDK has failed to load interstitial ad", NSLocalizedFailureReasonErrorKey:@"IronSource has failed to load interstitial ad."}]}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kAlexIronSourceInterstitialNotificationLoadFailed object:nil userInfo:@{kAlexIronSourceInterstitialNotificationUserInfoInstanceID:instanceId != nil ? instanceId : @"", kAlexIronSourceInterstitialNotificationUserInfoError:error != nil ? error : [NSError errorWithDomain:@"com.alex.IronSrouceInterstitialLoading" code:10001 userInfo:@{NSLocalizedDescriptionKey:@"AnyThinkSDK has failed to load interstitial ad", NSLocalizedFailureReasonErrorKey:@"IronSource has failed to load interstitial ad."}]}];
 }
 
 - (void)interstitialDidOpen:(NSString *)instanceId {
     
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:kATIronSourceInterstitialNotificationShow object:nil userInfo:@{kATIronSourceInterstitialNotificationUserInfoInstanceID:instanceId != nil ? instanceId : @""}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kAlexIronSourceInterstitialNotificationShow object:nil userInfo:@{kAlexIronSourceInterstitialNotificationUserInfoInstanceID:instanceId != nil ? instanceId : @""}];
 }
 
 - (void)interstitialDidClose:(NSString *)instanceId {
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:kATIronSourceInterstitialNotificationClose object:nil userInfo:@{kATIronSourceInterstitialNotificationUserInfoInstanceID:instanceId != nil ? instanceId : @""}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kAlexIronSourceInterstitialNotificationClose object:nil userInfo:@{kAlexIronSourceInterstitialNotificationUserInfoInstanceID:instanceId != nil ? instanceId : @""}];
 }
 
 - (void)interstitialDidFailToShowWithError:(NSError *)error instanceId:(NSString *)instanceId {
@@ -56,7 +56,7 @@ NSString *const kATIronSourceInterstitialNotificationUserInfoError = @"error";
 
 - (void)didClickInterstitial:(NSString *)instanceId {
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:kATIronSourceInterstitialNotificationClick object:nil userInfo:@{kATIronSourceInterstitialNotificationUserInfoInstanceID:instanceId != nil ? instanceId : @""}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kAlexIronSourceInterstitialNotificationClick object:nil userInfo:@{kAlexIronSourceInterstitialNotificationUserInfoInstanceID:instanceId != nil ? instanceId : @""}];
 }
 @end
 

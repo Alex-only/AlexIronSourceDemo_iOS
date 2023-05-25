@@ -7,13 +7,13 @@
 #import <IronSource/IronSource.h>
 
 
-NSString *const kATIronSourceRVNotificationLoaded = @"com.anythink.kATIronSourceRVNotificationLoaded";
-NSString *const kATIronSourceRVNotificationLoadFailed = @"com.anythink.kATIronSourceRVNotificationLoadFailed";
-NSString *const kATIronSourceRVNotificationShow = @"com.anythink.kATIronSourceRVNotificationShow";
+NSString *const kATIronSourceRVNotificationLoaded = @"com.alex.kATIronSourceRVNotificationLoaded";
+NSString *const kATIronSourceRVNotificationLoadFailed = @"com.alex.kATIronSourceRVNotificationLoadFailed";
+NSString *const kATIronSourceRVNotificationShow = @"com.alex.kATIronSourceRVNotificationShow";
 NSString *const kATIronSourceRVNotificationShowFailed = @"kATIronSourceRVNotificationShowFailed";
-NSString *const kATIronSourceRVNotificationClick = @"com.anythink.kATIronSourceRVNotificationClick";
-NSString *const kATIronSourceRVNotificationReward = @"com.anythink.kATIronSourceRVNotificationReward";
-NSString *const kATIronSourceRVNotificationClose = @"com.anythink.kATIronSourceRVNotificationClose";
+NSString *const kATIronSourceRVNotificationClick = @"com.alex.kATIronSourceRVNotificationClick";
+NSString *const kATIronSourceRVNotificationReward = @"com.alex.kATIronSourceRVNotificationReward";
+NSString *const kATIronSourceRVNotificationClose = @"com.alex.kATIronSourceRVNotificationClose";
 
 NSString *const kATIronSourceRVNotificationUserInfoInstanceIDKey = @"instance_id";
 NSString *const kATIronSourceRVNotificationUserInfoErrorKey = @"error";
@@ -35,12 +35,12 @@ NSString *const kATIronSourceRVNotificationUserInfoErrorKey = @"error";
 }
 
 - (void)rewardedVideoDidFailToLoadWithError:(NSError *)error instanceId:(NSString *)instanceId {
-    [[NSNotificationCenter defaultCenter] postNotificationName:kATIronSourceRVNotificationLoadFailed object:nil userInfo:@{kATIronSourceRVNotificationUserInfoInstanceIDKey:instanceId != nil ? instanceId : @"", kATIronSourceRVNotificationUserInfoErrorKey:error != nil ? error : [NSError errorWithDomain:@"com.anythink.IronSrouceRewardedVideoLoading" code:10001 userInfo:@{NSLocalizedDescriptionKey:@"AnyThinkSDK has failed to load rewarded video ad", NSLocalizedFailureReasonErrorKey:@"IronSource has failed to load rewarded video ad."}]}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kATIronSourceRVNotificationLoadFailed object:nil userInfo:@{kATIronSourceRVNotificationUserInfoInstanceIDKey:instanceId != nil ? instanceId : @"", kATIronSourceRVNotificationUserInfoErrorKey:error != nil ? error : [NSError errorWithDomain:@"com.alex.IronSrouceRewardedVideoLoading" code:10001 userInfo:@{NSLocalizedDescriptionKey:@"AnyThinkSDK has failed to load rewarded video ad", NSLocalizedFailureReasonErrorKey:@"IronSource has failed to load rewarded video ad."}]}];
 }
 
 - (void)rewardedVideoDidFailToShowWithError:(NSError *)error instanceId:(NSString *)instanceId {
     
-    [[NSNotificationCenter defaultCenter] postNotificationName:kATIronSourceRVNotificationShowFailed object:nil userInfo:@{kATIronSourceRVNotificationUserInfoInstanceIDKey:instanceId != nil ? instanceId : @"", kATIronSourceRVNotificationUserInfoErrorKey:error != nil ? error : [NSError errorWithDomain:@"com.anythink.IronSrouceRewardedVideoShow" code:10001 userInfo:@{NSLocalizedDescriptionKey:@"AnyThinkSDK has failed to show rewarded video ad", NSLocalizedFailureReasonErrorKey:@"IronSource has failed to show rewarded video ad."}]}];
+    [[NSNotificationCenter defaultCenter] postNotificationName:kATIronSourceRVNotificationShowFailed object:nil userInfo:@{kATIronSourceRVNotificationUserInfoInstanceIDKey:instanceId != nil ? instanceId : @"", kATIronSourceRVNotificationUserInfoErrorKey:error != nil ? error : [NSError errorWithDomain:@"com.alex.IronSrouceRewardedVideoShow" code:10001 userInfo:@{NSLocalizedDescriptionKey:@"AnyThinkSDK has failed to show rewarded video ad", NSLocalizedFailureReasonErrorKey:@"IronSource has failed to show rewarded video ad."}]}];
 }
 
 - (void)rewardedVideoDidOpen:(NSString *)instanceId {

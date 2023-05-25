@@ -1,13 +1,13 @@
 
 #import <UIKit/UIKit.h>
 
-extern NSString *const kATIronSourceInterstitialNotificationLoaded;
-extern NSString *const kATIronSourceInterstitialNotificationLoadFailed;
-extern NSString *const kATIronSourceInterstitialNotificationShow;
-extern NSString *const kATIronSourceInterstitialNotificationClick;
-extern NSString *const kATIronSourceInterstitialNotificationClose;
+extern NSString *const kAlexIronSourceInterstitialNotificationLoaded;
+extern NSString *const kAlexIronSourceInterstitialNotificationLoadFailed;
+extern NSString *const kAlexIronSourceInterstitialNotificationShow;
+extern NSString *const kAlexIronSourceInterstitialNotificationClick;
+extern NSString *const kAlexIronSourceInterstitialNotificationClose;
 
-extern NSString *const kATIronSourceInterstitialNotificationUserInfoInstanceID;
-extern NSString *const kATIronSourceInterstitialNotificationUserInfoError;
+extern NSString *const kAlexIronSourceInterstitialNotificationUserInfoInstanceID;
+extern NSString *const kAlexIronSourceInterstitialNotificationUserInfoError;
 @interface AlexISInterstitialAdapter : NSObject
 @end
