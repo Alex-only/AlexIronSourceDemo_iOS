@@ -12,13 +12,12 @@ Please refer to [TopOn SDK Integration Documentation](https://docs.toponad.com/#
 
 1. Drag the code under the Ironsource folder into the project
 
-<img width="987" alt="screenshot 2023-02-08 13 52 41" src="https://user-images.githubusercontent.com/124124788/217446269-c866b212-242a-425a-814a-f7aa14571be8.png ">
+![截屏2023-05-25 15 16 14](https://github.com/Alex-only/AlexIronSourceDemo_iOS/assets/124124788/b7108484-fe3d-4ff0-8fbb-dd4bf61d4404)
 
 2. Add the following instructions to Podfile, and then execute pod install
+  pod 'IronSourceSDK','7.3.0.0'
 
-   pod 'AppLovinSDK', '11.6.0'
-  
-   pod 'AnyThinkiOS', '6.1.65'
+  pod 'AnyThinkiOS','6.2.16'
 
 3. The Key used in the Adapter is described as follows:
 
