@@ -15,12 +15,12 @@ typedef NS_ENUM(NSInteger, ATATFBBKIronSourceAdBidFormat) {
     ATATFBBKIronSourceAdBidFormatRewardedVideo
 };
 
-@interface AlexIronsourceBaseManager : ATNetworkBaseManager
+@interface AlexISBaseManager : ATNetworkBaseManager
 
 @end
 
 
-@protocol AlexBaseIronSource<NSObject>
+@protocol AlexISBaseIronSource<NSObject>
 + (void)setConsent:(BOOL)consent;
 + (NSString *)sdkVersion;
 + (BOOL)setDynamicUserId:(NSString *)dynamicUserId;

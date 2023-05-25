@@ -1,9 +1,9 @@
 
 
-#import "AlexIronSourceRewardedVideoAdapter.h"
-#import "AlexIronSourceRewardedVideoCustomEvent.h"
+#import "AlexISRewardedVideoAdapter.h"
+#import "AlexISRewardedVideoCustomEvent.h"
 #import <AnyThinkSDK/ATAppSettingManager.h>
-#import "AlexIronsourceBaseManager.h"
+#import "AlexISBaseManager.h"
 #import <IronSource/IronSource.h>
 
 
@@ -65,20 +65,20 @@ NSString *const kATIronSourceRVNotificationUserInfoErrorKey = @"error";
 }
 @end
 
-@interface AlexIronSourceRewardedVideoAdapter()
-@property(nonatomic, readonly) AlexIronSourceRewardedVideoCustomEvent *customEvent;
+@interface AlexISRewardedVideoAdapter()
+@property(nonatomic, readonly) AlexISRewardedVideoCustomEvent *customEvent;
 @end
 
 static NSString *const kUnitIDKey = @"unit_id";
 static NSString *const kPlacementNameKey = @"placement_name";
-@implementation AlexIronSourceRewardedVideoAdapter
+@implementation AlexISRewardedVideoAdapter
 
 +(BOOL) adReadyWithCustomObject:(id)customObject info:(NSDictionary*)info {
     return [IronSource hasISDemandOnlyRewardedVideo:customObject];
 }
 
 +(void) showRewardedVideo:(ATRewardedVideo*)rewardedVideo inViewController:(UIViewController*)viewController delegate:(id<ATRewardedVideoDelegate>)delegate {
-    AlexIronSourceRewardedVideoCustomEvent *customEvent = (AlexIronSourceRewardedVideoCustomEvent*)rewardedVideo.customEvent;
+    AlexISRewardedVideoCustomEvent *customEvent = (AlexISRewardedVideoCustomEvent*)rewardedVideo.customEvent;
     customEvent.delegate = delegate;
     [customEvent registerNotification];
     [IronSource showISDemandOnlyRewardedVideo:viewController instanceId:customEvent.unitID];
@@ -87,14 +87,14 @@ static NSString *const kPlacementNameKey = @"placement_name";
 -(instancetype) initWithNetworkCustomInfo:(NSDictionary*)serverInfo localInfo:(NSDictionary*)localInfo {
     self = [super init];
     if (self != nil) {
-        [AlexIronsourceBaseManager initWithCustomInfo:serverInfo localInfo:localInfo];
+        [AlexISBaseManager initWithCustomInfo:serverInfo localInfo:localInfo];
     }
     return self;
 }
 
 -(void) loadADWithInfo:(NSDictionary*)serverInfo localInfo:(NSDictionary*)localInfo completion:(void (^)(NSArray<NSDictionary *> *, NSError *))completion {
 
-    _customEvent = [[AlexIronSourceRewardedVideoCustomEvent alloc] initWithUnitID:serverInfo[@"instance_id"] serverInfo:serverInfo localInfo:localInfo];
+    _customEvent = [[AlexISRewardedVideoCustomEvent alloc] initWithUnitID:serverInfo[@"instance_id"] serverInfo:serverInfo localInfo:localInfo];
     _customEvent.requestNumber = [serverInfo[@"request_num"] integerValue];
     _customEvent.requestCompletionBlock = completion;
     
@@ -114,7 +114,7 @@ static NSString *const kPlacementNameKey = @"placement_name";
 
 +(void)headerBiddingParametersWithUnitGroupModel:(ATUnitGroupModel*)unitGroupModel extra:(NSDictionary *)extra completion:(void(^)(NSDictionary *headerBiddingParams))completion {
     
-    [AlexIronsourceBaseManager initWithCustomInfo:unitGroupModel.content localInfo:@{}];
+    [AlexISBaseManager initWithCustomInfo:unitGroupModel.content localInfo:@{}];
     NSString *biddingToken = [IronSource getISDemandOnlyBiddingData];
     if (!biddingToken) {
         completion(nil);

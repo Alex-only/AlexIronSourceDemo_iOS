@@ -1,10 +1,10 @@
 
 
-#import "AlexIronSourceInterstitialCustomEvent.h"
+#import "AlexISInterstitialCustomEvent.h"
 
 
 
-@implementation AlexIronSourceInterstitialCustomEvent
+@implementation AlexISInterstitialCustomEvent
 -(instancetype) initWithInfo:(NSDictionary *)serverInfo localInfo:(NSDictionary *)localInfo {
     self = [super initWithInfo:serverInfo localInfo:localInfo];
     if (self != nil) {

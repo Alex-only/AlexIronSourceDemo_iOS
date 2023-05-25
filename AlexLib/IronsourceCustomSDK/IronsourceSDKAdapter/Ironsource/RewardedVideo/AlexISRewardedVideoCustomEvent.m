@@ -1,10 +1,10 @@
 
-#import "AlexIronSourceRewardedVideoCustomEvent.h"
+#import "AlexISRewardedVideoCustomEvent.h"
 
 
-@interface AlexIronSourceRewardedVideoCustomEvent()
+@interface AlexISRewardedVideoCustomEvent()
 @end
-@implementation AlexIronSourceRewardedVideoCustomEvent
+@implementation AlexISRewardedVideoCustomEvent
 -(instancetype) initWithUnitID:(NSString *)unitID serverInfo:(NSDictionary *)serverInfo localInfo:(NSDictionary *)localInfo {
     self = [super initWithInfo:serverInfo localInfo:localInfo];
     if (self != nil) {

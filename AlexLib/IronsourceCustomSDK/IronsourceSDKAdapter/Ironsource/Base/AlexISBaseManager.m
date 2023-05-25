@@ -1,13 +1,13 @@
 
 
-#import "AlexIronsourceBaseManager.h"
+#import "AlexISBaseManager.h"
 #import <AnyThinkSDK/ATAppSettingManager.h>
 #import <IronSource/IronSource.h>
 
-@implementation AlexIronsourceBaseManager
+@implementation AlexISBaseManager
 + (void)initWithCustomInfo:(NSDictionary *)serverInfo localInfo:(NSDictionary *)localInfo {
     ATUnitGroupModel *unitGroupModel =(ATUnitGroupModel*)serverInfo[kATAdapterCustomInfoUnitGroupModelKey];
-    [AlexIronsourceBaseManager setPersonalizedStateWithUnitGroupModel:unitGroupModel];
+    [AlexISBaseManager setPersonalizedStateWithUnitGroupModel:unitGroupModel];
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

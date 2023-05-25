@@ -13,7 +13,7 @@ extern NSString *const kATIronSourceRVNotificationClose;
 extern NSString *const kATIronSourceRVNotificationUserInfoInstanceIDKey;
 extern NSString *const kATIronSourceRVNotificationUserInfoErrorKey;
 
-@interface AlexIronSourceRewardedVideoAdapter : NSObject
+@interface AlexISRewardedVideoAdapter : NSObject
 @end
 
 

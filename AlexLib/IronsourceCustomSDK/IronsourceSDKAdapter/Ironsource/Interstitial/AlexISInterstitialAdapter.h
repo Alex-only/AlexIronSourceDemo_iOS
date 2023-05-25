@@ -9,5 +9,5 @@ extern NSString *const kATIronSourceInterstitialNotificationClose;
 
 extern NSString *const kATIronSourceInterstitialNotificationUserInfoInstanceID;
 extern NSString *const kATIronSourceInterstitialNotificationUserInfoError;
-@interface AlexIronSourceInterstitialAdapter : NSObject
+@interface AlexISInterstitialAdapter : NSObject
 @end

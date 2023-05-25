@@ -1,8 +1,8 @@
 
-#import "AlexIronSourceInterstitialAdapter.h"
-#import "AlexIronSourceInterstitialCustomEvent.h"
+#import "AlexISInterstitialAdapter.h"
+#import "AlexISInterstitialCustomEvent.h"
 #import <AnyThinkSDK/ATAppSettingManager.h>
-#import "AlexIronsourceBaseManager.h"
+#import "AlexISBaseManager.h"
 #import <IronSource/IronSource.h>
 #import <AnyThinkSDK/AnyThinkSDK.h>
 
@@ -60,33 +60,33 @@ NSString *const kATIronSourceInterstitialNotificationUserInfoError = @"error";
 }
 @end
 
-@interface AlexIronSourceInterstitialAdapter()
-@property(nonatomic, readonly) AlexIronSourceInterstitialCustomEvent *customEvent;
+@interface AlexISInterstitialAdapter()
+@property(nonatomic, readonly) AlexISInterstitialCustomEvent *customEvent;
 @end
 
 static NSString *const kPlacementNameKey = @"placement_name";
-@implementation AlexIronSourceInterstitialAdapter
+@implementation AlexISInterstitialAdapter
 +(BOOL) adReadyWithCustomObject:(NSString*)customObject info:(NSDictionary*)info {
     return [IronSource hasISDemandOnlyInterstitial:customObject];;
 }
 
 +(void) showInterstitial:(ATInterstitial*)interstitial inViewController:(UIViewController*)viewController delegate:(id<ATInterstitialDelegate>)delegate {
     interstitial.customEvent.delegate = delegate;
-    [(AlexIronSourceInterstitialCustomEvent *)interstitial.customEvent registerNotification];
+    [(AlexISInterstitialCustomEvent *)interstitial.customEvent registerNotification];
     [IronSource showISDemandOnlyInterstitial:viewController instanceId:interstitial.customObject];
 }
 
 -(instancetype) initWithNetworkCustomInfo:(NSDictionary*)serverInfo localInfo:(NSDictionary*)localInfo {
     self = [super init];
     if (self != nil) {
-        [AlexIronsourceBaseManager initWithCustomInfo:serverInfo localInfo:localInfo];
+        [AlexISBaseManager initWithCustomInfo:serverInfo localInfo:localInfo];
     }
     return self;
 }
 
 -(void) loadADWithInfo:(NSDictionary*)serverInfo localInfo:(NSDictionary*)localInfo completion:(void (^)(NSArray<NSDictionary *> *, NSError *))completion {
     
-    _customEvent = [[AlexIronSourceInterstitialCustomEvent alloc] initWithInfo:serverInfo localInfo:localInfo];
+    _customEvent = [[AlexISInterstitialCustomEvent alloc] initWithInfo:serverInfo localInfo:localInfo];
     _customEvent.requestNumber = [serverInfo[@"request_num"] integerValue];
     _customEvent.requestCompletionBlock = completion;
     
@@ -102,7 +102,7 @@ static NSString *const kPlacementNameKey = @"placement_name";
 
 +(void)headerBiddingParametersWithUnitGroupModel:(ATUnitGroupModel*)unitGroupModel extra:(NSDictionary *)extra completion:(void(^)(NSDictionary *headerBiddingParams))completion {
     
-    [AlexIronsourceBaseManager initWithCustomInfo:unitGroupModel.content localInfo:@{}];
+    [AlexISBaseManager initWithCustomInfo:unitGroupModel.content localInfo:@{}];
     NSString *biddingToken = [IronSource getISDemandOnlyBiddingData];
     if (!biddingToken) {
         completion(nil);

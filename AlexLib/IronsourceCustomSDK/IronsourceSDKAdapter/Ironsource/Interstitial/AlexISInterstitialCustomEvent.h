@@ -1,10 +1,10 @@
 
 
 #import <AnyThinkInterstitial/AnyThinkInterstitial.h>
-#import "AlexIronSourceInterstitialAdapter.h"
+#import "AlexISInterstitialAdapter.h"
 NS_ASSUME_NONNULL_BEGIN
 
-@interface AlexIronSourceInterstitialCustomEvent : ATInterstitialCustomEvent
+@interface AlexISInterstitialCustomEvent : ATInterstitialCustomEvent
 -(void) registerNotification;
 
 @end
