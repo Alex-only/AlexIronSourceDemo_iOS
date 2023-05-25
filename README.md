@@ -13,8 +13,7 @@ Tip: If necessary, please refer to [the English documentation](https://github.co
 ## 二. 引入Alex Adapter
 
 1.将 Ironsource 文件夹下源代码 或者 AlexIronsourceSDKAdapter.framework 拖入项目中
-
-<img width="987" alt="截屏2023-02-08 13 52 41" src="https://user-images.githubusercontent.com/124124788/217446269-c866b212-242a-425a-814a-f7aa14571be8.png">
+![截屏2023-05-25 15 16 14](https://github.com/Alex-only/AlexIronSourceDemo_iOS/assets/124124788/b7108484-fe3d-4ff0-8fbb-dd4bf61d4404)
 <img width="832" alt="截屏2023-03-02 13 51 36" src="https://user-images.githubusercontent.com/124124788/222342852-5b15d5ae-893e-4976-b47b-e1e14a006317.png">
 
 
@@ -37,6 +36,7 @@ Tip: If necessary, please refer to [the English documentation](https://github.co
 1、按照SDK对接文档接入同时，需要在后台添加自定义广告平台
 
 ![image1](https://user-images.githubusercontent.com/124124788/217697673-6991552e-d4de-466d-976c-cc3903cdc60e.png)
+
 
 2、选择【自定义广告平台】，填写广告平台名称、账号名称，按照SDK的对接文档填写Adapter.  
    ps:(广告平台名称需要写上Ironsource，便于区分广告平台，建议名称格式：Ironsource_XXXXX)
