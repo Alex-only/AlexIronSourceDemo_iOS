@@ -14,7 +14,8 @@ Tip: If necessary, please refer to [the English documentation](https://github.co
 
 1.将 Ironsource 文件夹下源代码 或者 AlexIronsourceSDKAdapter.framework 拖入项目中
 ![截屏2023-05-25 15 16 14](https://github.com/Alex-only/AlexIronSourceDemo_iOS/assets/124124788/b7108484-fe3d-4ff0-8fbb-dd4bf61d4404)
-<img width="832" alt="截屏2023-03-02 13 51 36" src="https://user-images.githubusercontent.com/124124788/222342852-5b15d5ae-893e-4976-b47b-e1e14a006317.png">
+
+<img width="982" alt="截屏2023-05-25 15 23 23" src="https://github.com/Alex-only/AlexIronSourceDemo_iOS/assets/124124788/5a755c0b-02bd-4c97-abb1-afdfa448c59b">
 
 
 2.Podfile 添加以下指令, 然后执行 pod install 
