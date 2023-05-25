@@ -1,19 +1,13 @@
-//
-//  ATIronsourceBaseManager.m
-//  AnyThinkIronSourceAdapter
-//
-//  Created by Topon on 11/16/20.
-//  Copyright © 2020 AnyThink. All rights reserved.
-//
 
-#import "ATIronsourceBaseManager.h"
+
+#import "AlexIronsourceBaseManager.h"
 #import <AnyThinkSDK/ATAppSettingManager.h>
 #import <IronSource/IronSource.h>
 
-@implementation ATIronsourceBaseManager
+@implementation AlexIronsourceBaseManager
 + (void)initWithCustomInfo:(NSDictionary *)serverInfo localInfo:(NSDictionary *)localInfo {
     ATUnitGroupModel *unitGroupModel =(ATUnitGroupModel*)serverInfo[kATAdapterCustomInfoUnitGroupModelKey];
-    [ATIronsourceBaseManager setPersonalizedStateWithUnitGroupModel:unitGroupModel];
+    [AlexIronsourceBaseManager setPersonalizedStateWithUnitGroupModel:unitGroupModel];
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{

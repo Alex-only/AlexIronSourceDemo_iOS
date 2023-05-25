@@ -1,10 +1,4 @@
-//
-//  ATIronsourceBaseManager.h
-//  AnyThinkIronSourceAdapter
-//
-//  Created by Topon on 11/16/20.
-//  Copyright © 2020 AnyThink. All rights reserved.
-//
+
 
 #import <AnyThinkSDK/AnyThinkSDK.h>
 
@@ -21,12 +15,12 @@ typedef NS_ENUM(NSInteger, ATATFBBKIronSourceAdBidFormat) {
     ATATFBBKIronSourceAdBidFormatRewardedVideo
 };
 
-@interface ATIronsourceBaseManager : ATNetworkBaseManager
+@interface AlexIronsourceBaseManager : ATNetworkBaseManager
 
 @end
 
 
-@protocol ATBaseIronSource<NSObject>
+@protocol AlexBaseIronSource<NSObject>
 + (void)setConsent:(BOOL)consent;
 + (NSString *)sdkVersion;
 + (BOOL)setDynamicUserId:(NSString *)dynamicUserId;

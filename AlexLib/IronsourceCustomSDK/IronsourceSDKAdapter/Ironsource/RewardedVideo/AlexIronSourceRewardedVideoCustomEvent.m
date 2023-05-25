@@ -1,17 +1,10 @@
-//
-//  ATIronSourceRewardedVideoCustomEvent.m
-//  AnyThinkIronSourceRewardedVideoAdapter
-//
-//  Created by Martin Lau on 09/07/2018.
-//  Copyright © 2018 Martin Lau. All rights reserved.
-//
 
-#import "ATIronSourceRewardedVideoCustomEvent.h"
+#import "AlexIronSourceRewardedVideoCustomEvent.h"
 
 
-@interface ATIronSourceRewardedVideoCustomEvent()
+@interface AlexIronSourceRewardedVideoCustomEvent()
 @end
-@implementation ATIronSourceRewardedVideoCustomEvent
+@implementation AlexIronSourceRewardedVideoCustomEvent
 -(instancetype) initWithUnitID:(NSString *)unitID serverInfo:(NSDictionary *)serverInfo localInfo:(NSDictionary *)localInfo {
     self = [super initWithInfo:serverInfo localInfo:localInfo];
     if (self != nil) {

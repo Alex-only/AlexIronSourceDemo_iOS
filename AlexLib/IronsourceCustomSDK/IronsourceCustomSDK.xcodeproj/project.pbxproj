@@ -19,16 +19,16 @@
 		E0EFCBF22A1B506A00243308 /* IronsourceSDKAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCBF12A1B506A00243308 /* IronsourceSDKAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E0EFCBF52A1B506A00243308 /* IronsourceSDKAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0EFCBEF2A1B506A00243308 /* IronsourceSDKAdapter.framework */; };
 		E0EFCBF62A1B506A00243308 /* IronsourceSDKAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E0EFCBEF2A1B506A00243308 /* IronsourceSDKAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E0EFCC092A1B512A00243308 /* ATIronSourceInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCBFD2A1B512A00243308 /* ATIronSourceInterstitialCustomEvent.m */; };
-		E0EFCC0A2A1B512A00243308 /* ATIronSourceInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCBFE2A1B512A00243308 /* ATIronSourceInterstitialAdapter.m */; };
-		E0EFCC0B2A1B512A00243308 /* ATIronSourceInterstitialAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCBFF2A1B512A00243308 /* ATIronSourceInterstitialAdapter.h */; };
-		E0EFCC0C2A1B512A00243308 /* ATIronSourceInterstitialCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCC002A1B512A00243308 /* ATIronSourceInterstitialCustomEvent.h */; };
-		E0EFCC0D2A1B512A00243308 /* ATIronSourceRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCC022A1B512A00243308 /* ATIronSourceRewardedVideoCustomEvent.m */; };
-		E0EFCC0E2A1B512A00243308 /* ATIronSourceRewardedVideoAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCC032A1B512A00243308 /* ATIronSourceRewardedVideoAdapter.m */; };
-		E0EFCC0F2A1B512A00243308 /* ATIronSourceRewardedVideoCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCC042A1B512A00243308 /* ATIronSourceRewardedVideoCustomEvent.h */; };
-		E0EFCC102A1B512A00243308 /* ATIronSourceRewardedVideoAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCC052A1B512A00243308 /* ATIronSourceRewardedVideoAdapter.h */; };
-		E0EFCC112A1B512A00243308 /* ATIronsourceBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCC072A1B512A00243308 /* ATIronsourceBaseManager.h */; };
-		E0EFCC122A1B512A00243308 /* ATIronsourceBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCC082A1B512A00243308 /* ATIronsourceBaseManager.m */; };
+		E0EFCC092A1B512A00243308 /* AlexIronSourceInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCBFD2A1B512A00243308 /* AlexIronSourceInterstitialCustomEvent.m */; };
+		E0EFCC0A2A1B512A00243308 /* AlexIronSourceInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCBFE2A1B512A00243308 /* AlexIronSourceInterstitialAdapter.m */; };
+		E0EFCC0B2A1B512A00243308 /* AlexIronSourceInterstitialAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCBFF2A1B512A00243308 /* AlexIronSourceInterstitialAdapter.h */; };
+		E0EFCC0C2A1B512A00243308 /* AlexIronSourceInterstitialCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCC002A1B512A00243308 /* AlexIronSourceInterstitialCustomEvent.h */; };
+		E0EFCC0D2A1B512A00243308 /* AlexIronSourceRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCC022A1B512A00243308 /* AlexIronSourceRewardedVideoCustomEvent.m */; };
+		E0EFCC0E2A1B512A00243308 /* AlexIronSourceRewardedVideoAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCC032A1B512A00243308 /* AlexIronSourceRewardedVideoAdapter.m */; };
+		E0EFCC0F2A1B512A00243308 /* AlexIronSourceRewardedVideoCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCC042A1B512A00243308 /* AlexIronSourceRewardedVideoCustomEvent.h */; };
+		E0EFCC102A1B512A00243308 /* AlexIronSourceRewardedVideoAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCC052A1B512A00243308 /* AlexIronSourceRewardedVideoAdapter.h */; };
+		E0EFCC112A1B512A00243308 /* AlexIronsourceBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EFCC072A1B512A00243308 /* AlexIronsourceBaseManager.h */; };
+		E0EFCC122A1B512A00243308 /* AlexIronsourceBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCC082A1B512A00243308 /* AlexIronsourceBaseManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,16 +76,16 @@
 		E0EFCBE32A1B505100243308 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E0EFCBEF2A1B506A00243308 /* IronsourceSDKAdapter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IronsourceSDKAdapter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0EFCBF12A1B506A00243308 /* IronsourceSDKAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IronsourceSDKAdapter.h; sourceTree = "<group>"; };
-		E0EFCBFD2A1B512A00243308 /* ATIronSourceInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATIronSourceInterstitialCustomEvent.m; sourceTree = "<group>"; };
-		E0EFCBFE2A1B512A00243308 /* ATIronSourceInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATIronSourceInterstitialAdapter.m; sourceTree = "<group>"; };
-		E0EFCBFF2A1B512A00243308 /* ATIronSourceInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATIronSourceInterstitialAdapter.h; sourceTree = "<group>"; };
-		E0EFCC002A1B512A00243308 /* ATIronSourceInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATIronSourceInterstitialCustomEvent.h; sourceTree = "<group>"; };
-		E0EFCC022A1B512A00243308 /* ATIronSourceRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATIronSourceRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
-		E0EFCC032A1B512A00243308 /* ATIronSourceRewardedVideoAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATIronSourceRewardedVideoAdapter.m; sourceTree = "<group>"; };
-		E0EFCC042A1B512A00243308 /* ATIronSourceRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATIronSourceRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
-		E0EFCC052A1B512A00243308 /* ATIronSourceRewardedVideoAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATIronSourceRewardedVideoAdapter.h; sourceTree = "<group>"; };
-		E0EFCC072A1B512A00243308 /* ATIronsourceBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATIronsourceBaseManager.h; sourceTree = "<group>"; };
-		E0EFCC082A1B512A00243308 /* ATIronsourceBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ATIronsourceBaseManager.m; sourceTree = "<group>"; };
+		E0EFCBFD2A1B512A00243308 /* AlexIronSourceInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexIronSourceInterstitialCustomEvent.m; sourceTree = "<group>"; };
+		E0EFCBFE2A1B512A00243308 /* AlexIronSourceInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexIronSourceInterstitialAdapter.m; sourceTree = "<group>"; };
+		E0EFCBFF2A1B512A00243308 /* AlexIronSourceInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexIronSourceInterstitialAdapter.h; sourceTree = "<group>"; };
+		E0EFCC002A1B512A00243308 /* AlexIronSourceInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexIronSourceInterstitialCustomEvent.h; sourceTree = "<group>"; };
+		E0EFCC022A1B512A00243308 /* AlexIronSourceRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexIronSourceRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
+		E0EFCC032A1B512A00243308 /* AlexIronSourceRewardedVideoAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexIronSourceRewardedVideoAdapter.m; sourceTree = "<group>"; };
+		E0EFCC042A1B512A00243308 /* AlexIronSourceRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexIronSourceRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
+		E0EFCC052A1B512A00243308 /* AlexIronSourceRewardedVideoAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexIronSourceRewardedVideoAdapter.h; sourceTree = "<group>"; };
+		E0EFCC072A1B512A00243308 /* AlexIronsourceBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexIronsourceBaseManager.h; sourceTree = "<group>"; };
+		E0EFCC082A1B512A00243308 /* AlexIronsourceBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexIronsourceBaseManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,10 +189,10 @@
 		E0EFCBFC2A1B512A00243308 /* Interstitial */ = {
 			isa = PBXGroup;
 			children = (
-				E0EFCBFF2A1B512A00243308 /* ATIronSourceInterstitialAdapter.h */,
-				E0EFCBFE2A1B512A00243308 /* ATIronSourceInterstitialAdapter.m */,
-				E0EFCC002A1B512A00243308 /* ATIronSourceInterstitialCustomEvent.h */,
-				E0EFCBFD2A1B512A00243308 /* ATIronSourceInterstitialCustomEvent.m */,
+				E0EFCBFF2A1B512A00243308 /* AlexIronSourceInterstitialAdapter.h */,
+				E0EFCBFE2A1B512A00243308 /* AlexIronSourceInterstitialAdapter.m */,
+				E0EFCC002A1B512A00243308 /* AlexIronSourceInterstitialCustomEvent.h */,
+				E0EFCBFD2A1B512A00243308 /* AlexIronSourceInterstitialCustomEvent.m */,
 			);
 			path = Interstitial;
 			sourceTree = "<group>";
@@ -200,10 +200,10 @@
 		E0EFCC012A1B512A00243308 /* RewardedVideo */ = {
 			isa = PBXGroup;
 			children = (
-				E0EFCC052A1B512A00243308 /* ATIronSourceRewardedVideoAdapter.h */,
-				E0EFCC032A1B512A00243308 /* ATIronSourceRewardedVideoAdapter.m */,
-				E0EFCC042A1B512A00243308 /* ATIronSourceRewardedVideoCustomEvent.h */,
-				E0EFCC022A1B512A00243308 /* ATIronSourceRewardedVideoCustomEvent.m */,
+				E0EFCC052A1B512A00243308 /* AlexIronSourceRewardedVideoAdapter.h */,
+				E0EFCC032A1B512A00243308 /* AlexIronSourceRewardedVideoAdapter.m */,
+				E0EFCC042A1B512A00243308 /* AlexIronSourceRewardedVideoCustomEvent.h */,
+				E0EFCC022A1B512A00243308 /* AlexIronSourceRewardedVideoCustomEvent.m */,
 			);
 			path = RewardedVideo;
 			sourceTree = "<group>";
@@ -211,8 +211,8 @@
 		E0EFCC062A1B512A00243308 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				E0EFCC072A1B512A00243308 /* ATIronsourceBaseManager.h */,
-				E0EFCC082A1B512A00243308 /* ATIronsourceBaseManager.m */,
+				E0EFCC072A1B512A00243308 /* AlexIronsourceBaseManager.h */,
+				E0EFCC082A1B512A00243308 /* AlexIronsourceBaseManager.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -224,11 +224,11 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0EFCC0F2A1B512A00243308 /* ATIronSourceRewardedVideoCustomEvent.h in Headers */,
-				E0EFCC112A1B512A00243308 /* ATIronsourceBaseManager.h in Headers */,
-				E0EFCC0B2A1B512A00243308 /* ATIronSourceInterstitialAdapter.h in Headers */,
-				E0EFCC102A1B512A00243308 /* ATIronSourceRewardedVideoAdapter.h in Headers */,
-				E0EFCC0C2A1B512A00243308 /* ATIronSourceInterstitialCustomEvent.h in Headers */,
+				E0EFCC0F2A1B512A00243308 /* AlexIronSourceRewardedVideoCustomEvent.h in Headers */,
+				E0EFCC112A1B512A00243308 /* AlexIronsourceBaseManager.h in Headers */,
+				E0EFCC0B2A1B512A00243308 /* AlexIronSourceInterstitialAdapter.h in Headers */,
+				E0EFCC102A1B512A00243308 /* AlexIronSourceRewardedVideoAdapter.h in Headers */,
+				E0EFCC0C2A1B512A00243308 /* AlexIronSourceInterstitialCustomEvent.h in Headers */,
 				E0EFCBF22A1B506A00243308 /* IronsourceSDKAdapter.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,11 +430,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0EFCC122A1B512A00243308 /* ATIronsourceBaseManager.m in Sources */,
-				E0EFCC0D2A1B512A00243308 /* ATIronSourceRewardedVideoCustomEvent.m in Sources */,
-				E0EFCC0E2A1B512A00243308 /* ATIronSourceRewardedVideoAdapter.m in Sources */,
-				E0EFCC092A1B512A00243308 /* ATIronSourceInterstitialCustomEvent.m in Sources */,
-				E0EFCC0A2A1B512A00243308 /* ATIronSourceInterstitialAdapter.m in Sources */,
+				E0EFCC122A1B512A00243308 /* AlexIronsourceBaseManager.m in Sources */,
+				E0EFCC0D2A1B512A00243308 /* AlexIronSourceRewardedVideoCustomEvent.m in Sources */,
+				E0EFCC0E2A1B512A00243308 /* AlexIronSourceRewardedVideoAdapter.m in Sources */,
+				E0EFCC092A1B512A00243308 /* AlexIronSourceInterstitialCustomEvent.m in Sources */,
+				E0EFCC0A2A1B512A00243308 /* AlexIronSourceInterstitialAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +594,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -622,6 +623,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 12;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

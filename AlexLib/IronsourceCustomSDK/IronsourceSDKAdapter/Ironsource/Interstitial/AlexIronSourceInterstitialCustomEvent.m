@@ -1,16 +1,10 @@
-//
-//  ATIronSourceInterstitialCustomEvent.m
-//  AnyThinkIronSourceInterstitialAdapter
-//
-//  Created by Martin Lau on 2018/10/9.
-//  Copyright © 2018 Martin Lau. All rights reserved.
-//
 
-#import "ATIronSourceInterstitialCustomEvent.h"
+
+#import "AlexIronSourceInterstitialCustomEvent.h"
 
 
 
-@implementation ATIronSourceInterstitialCustomEvent
+@implementation AlexIronSourceInterstitialCustomEvent
 -(instancetype) initWithInfo:(NSDictionary *)serverInfo localInfo:(NSDictionary *)localInfo {
     self = [super initWithInfo:serverInfo localInfo:localInfo];
     if (self != nil) {

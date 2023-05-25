@@ -1,10 +1,3 @@
-//
-//  ATIronSourceInterstitialAdapter.h
-//  AnyThinkIronSourceInterstitialAdapter
-//
-//  Created by Martin Lau on 2018/10/9.
-//  Copyright © 2018 Martin Lau. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 
@@ -16,5 +9,5 @@ extern NSString *const kATIronSourceInterstitialNotificationClose;
 
 extern NSString *const kATIronSourceInterstitialNotificationUserInfoInstanceID;
 extern NSString *const kATIronSourceInterstitialNotificationUserInfoError;
-@interface ATIronSourceInterstitialAdapter : NSObject
+@interface AlexIronSourceInterstitialAdapter : NSObject
 @end
