@@ -46,7 +46,7 @@ Tip: If necessary, please refer to [the English documentation](https://github.co
 
 将对应adapter的类名填入相关位置
 
-<img width="755" alt="截屏2023-03-02 13 48 16" src="https://user-images.githubusercontent.com/124124788/222342357-76892468-7b88-4dd1-bc90-cd29bf361e61.png">
+<img width="697" alt="截屏2023-06-14 19 52 58" src="https://github.com/Alex-only/AlexIronSourceDemo_iOS/assets/124124788/d13cf102-f252-4e53-8de8-5b36f97dca8b">
 
 3、记录广告平台ID
 
