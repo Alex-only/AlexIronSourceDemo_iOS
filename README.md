@@ -6,7 +6,7 @@ Tip: If necessary, please refer to [the English documentation](https://github.co
 
 ## 一. 接入TopOn SDK
 
-请参考[TopOn SDK集成文档](https://docs.toponad.com/#/zh-cn/ios/GetStarted/TopOn_Get_Started)接入TopOn SDK，建议接入**TopOn v6.1.65及以上版本**
+请参考[TopOn SDK集成文档](https://docs.toponad.com/#/zh-cn/ios/GetStarted/TopOn_Get_Started)接入TopOn SDK，建议接入**TopOn v6.2.30及以上版本**
 
 
 
@@ -22,7 +22,7 @@ Tip: If necessary, please refer to [the English documentation](https://github.co
 
   pod 'IronSourceSDK','7.3.0.0'
 
-  pod 'AnyThinkiOS','6.2.16'
+  pod 'AnyThinkiOS','6.2.30'
 
 3.Adapter中使用的Key说明如下：
 

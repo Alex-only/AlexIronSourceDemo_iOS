@@ -1,9 +1,4 @@
-//
-//  SceneDelegate.m
-//  IronsourceCustomSDK
-//
-//  Created by GUO PENG on 2023/5/22.
-//
+
 
 #import "SceneDelegate.h"
 
