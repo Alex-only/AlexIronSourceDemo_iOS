@@ -62,7 +62,7 @@ Tip: If necessary, please refer to [the English documentation](https://github.co
 
 1、先到 [TopOn后台](https://docs.toponad.com/#/zh-cn/android/download/package)，查看接入的TopOn版本兼容的Mintegral版本是多少？（TopOn v6.2.30版本兼容的Mintegral版本为v7.3.6）
 
-2、然后到 [Ironsource后台](https://dash.applovin.com/documentation/mediation/android/mediation-adapters#adapter-network-information)，根据接入的Ironsource SDK版本（v7.3.0.0）和Mintegral版本（v16.3.61），查找对应的Adapter版本（即v7.3.6）
+2、然后到 [Ironsource后台](https://dash.applovin.com/documentation/mediation/android/mediation-adapters#adapter-network-information)，根据接入的Ironsource SDK版本（v7.3.0.0）和Mintegral版本（v7.3.6），查找对应的Adapter版本（即v7.3.6）
 
 **注意：**
 
