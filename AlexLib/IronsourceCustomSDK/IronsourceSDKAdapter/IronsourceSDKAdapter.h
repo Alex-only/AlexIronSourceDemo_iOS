@@ -1,11 +1,3 @@
-//
-//  IronsourceSDKAdapter.h
-//  IronsourceSDKAdapter
-//
-//  Created by GUO PENG on 2023/5/22.
-//
-
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for IronsourceSDKAdapter.
