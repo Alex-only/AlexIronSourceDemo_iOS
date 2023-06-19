@@ -60,13 +60,13 @@ Tip: If necessary, please refer to [the English documentation](https://github.co
 
 如果不需要通过Ironsource接入其他广告平台，可跳过此部分内容。以接入Mintegral为例：
 
-1、先到 [TopOn后台](https://docs.toponad.com/#/zh-cn/android/download/package)，查看接入的TopOn版本兼容的Mintegral版本是多少？（TopOn v6.1.65版本兼容的Mintegral版本为v16.3.61）
+1、先到 [TopOn后台](https://docs.toponad.com/#/zh-cn/android/download/package)，查看接入的TopOn版本兼容的Mintegral版本是多少？（TopOn v6.2.30版本兼容的Mintegral版本为v7.3.6）
 
-2、然后到 [Ironsource后台](https://dash.applovin.com/documentation/mediation/android/mediation-adapters#adapter-network-information)，根据接入的Ironsource SDK版本（v11.6.0）和Mintegral版本（v16.3.61），查找对应的Adapter版本（即v16.3.61.0）
+2、然后到 [Ironsource后台](https://dash.applovin.com/documentation/mediation/android/mediation-adapters#adapter-network-information)，根据接入的Ironsource SDK版本（v7.3.0.0）和Mintegral版本（v16.3.61），查找对应的Adapter版本（即v7.3.6）
 
 **注意：**
 
-（1）如果找不到Mintegral v16.3.61版本对应的Adapter，可通过查看Adapter的Changelog，找到对应的Adapter版本
+（1）如果找不到Mintegral v7.3.6版本对应的Adapter，可通过查看Adapter的Changelog，找到对应的Adapter版本
 
 （2）需确保TopOn和Max都兼容Mintegral SDK
 ![image4](https://user-images.githubusercontent.com/124124788/222310868-8742a84c-61ef-4538-a907-1c94b085eab7.png)
