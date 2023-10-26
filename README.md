@@ -44,6 +44,9 @@ Tip: If necessary, please refer to [the English documentation](https://github.co
 
 ![image2](https://user-images.githubusercontent.com/124124788/217697688-3bc7cc6b-ea95-4887-948c-7eeb30402fbe.png)
 
+激励视频：AlexISRewardedVideoAdapter
+插屏广告：AlexISInterstitialAdapter
+
 将对应adapter的类名填入相关位置
 
 <img width="697" alt="截屏2023-06-14 19 52 58" src="https://github.com/Alex-only/AlexIronSourceDemo_iOS/assets/124124788/d13cf102-f252-4e53-8de8-5b36f97dca8b">
