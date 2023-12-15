@@ -1,6 +1,0 @@
-framework module Pods_IronsourceSDKAdapter {
-  umbrella header "Pods-IronsourceSDKAdapter-umbrella.h"
-
-  export *
-  module * { export * }
-}

@@ -1,6 +1,0 @@
-framework module IronsourceSDKAdapter {
-  umbrella header "IronsourceSDKAdapter.h"
-
-  export *
-  module * { export * }
-}
