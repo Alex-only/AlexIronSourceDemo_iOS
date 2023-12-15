@@ -1,0 +1,6 @@
+framework module AlexIronsourceSDKAdapter {
+  umbrella header "AlexIronsourceSDKAdapter.h"
+  export *
+
+  module * { export * }
+}
