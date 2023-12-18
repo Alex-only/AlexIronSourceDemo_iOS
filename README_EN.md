@@ -30,36 +30,50 @@ Please refer to [TopOn SDK Integration Documentation](https://docs.toponad.com/#
 
 ### 3. Background configuration
 
-1. You need to add a Custom Network.
+1. After connecting according to the SDK docking document, you need to add a custom advertising platform in the background
 
 ![1](https://user-images.githubusercontent.com/124124788/222124007-1a773ce8-aa7a-4a36-842b-9a67577327bb.png)
 
 
-2. Choose "Custom Network". Fill in Network Name/Account Name and Adapter's class names according to the contents above.
-*Network Name needs to contain Ironsource to distinguish the Network. Example: Ironsource_XXXXX,
+2. Select [Custom Network], fill in the advertising platform name and account name, and fill in the Adapter according to the SDK docking document
 
-![2](https://user-images.githubusercontent.com/124124788/222124025-dd7700ad-3190-4c30-a63f-2c82e13005bb.png)
+  *The name of the advertising platform needs to be written with ironSource, which is convenient for distinguishing the advertising platform. The suggested name format: ironSource_XXXXX*
 
-
-
-Please fill in the corresponding adapter class name in the relevant position.
+![image2](Assets/image2_en.png)
 
 
 
-RewardedVideoAd：AlexISRewardedVideoAdapter
+Note: If you use the aar method or directly use the source code method (without modifying the class name), please configure the following class name. If the class name is modified, please configure the modified class name
 
-InterstitialAd：AlexISInterstitialAdapter
+```
+AlexISRewardedVideoAdapter
+AlexISInterstitialAdapter
+```
 
-<img width="697" alt="截屏2023-06-14 19 52 58" src="https://github.com/Alex-only/AlexIronSourceDemo_iOS/assets/124124788/d13cf102-f252-4e53-8de8-5b36f97dca8b">
+![image3](Assets/image3_en.png)
 
 
-3. Mark the Network Firm ID
+3. Record Network Firm ID
 
 ![3](https://user-images.githubusercontent.com/124124788/222124037-0f4ab1fd-9295-411e-b08b-21d2ac2667b3.png)
 
 4. You can add the Ad Sources after adding the Network.
 
 5. You can edit the placement setting to fill the report api key.
+
+6. ironSource configuration
+
+Create Placement
+
+![image5](Assets/image5.png)
+
+Activate ironSource bidding
+
+![image6](Assets/image6.png)
+
+Configure waterfall
+
+![image7](Assets/image7.png)
 
 ### Step 4. ironSource integrates with other advertising platforms
 
