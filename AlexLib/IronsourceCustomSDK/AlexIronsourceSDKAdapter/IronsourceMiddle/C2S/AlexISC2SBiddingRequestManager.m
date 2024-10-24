@@ -5,6 +5,9 @@
 #import "AlexISInterstitialCustomEvent.h"
 #import "AlexNetworkC2STool.h"
 #import "AlexISRewardedVideoCustomEvent.h"
+#import "AlexISBannerCustomEvent.h"
+#import "AlexISBannerAdapter.h"
+#import "AlexISRVDelegate.h"
 
 @interface AlexISC2SBiddingRequestManager()
 
@@ -36,10 +39,30 @@
         case ATAdFormatRewardedVideo:
             [self startLoadRewardedVideoAdWithRequest:request];
             break;
+        case ATAdFormatBanner:
+            [self startLoadBannerAdWithRequest:request];
+
+            break;
         default:
             break;
     }
+}
+
+
+#pragma mark - ATAdFormatBanner
+- (void)startLoadBannerAdWithRequest:(AlexISBiddingRequest *)request {
     
+    dispatch_async(dispatch_get_main_queue(), ^{
+        
+        [IronSource setLevelPlayBannerDelegate:(AlexISBannerCustomEvent *)request.customEvent];
+
+        ISBannerSize *bannerSize = [AlexISBannerAdapter proposalSizeToSizeType:request.extraInfo[@"size"]];
+        
+        UIViewController *rootViewController =  [ATBannerCustomEvent rootViewControllerWithPlacementID:((ATPlacementModel*)request.extraInfo[kATAdapterCustomInfoPlacementModelKey]).placementID requestID:request.extraInfo[kATAdapterCustomInfoRequestIDKey]];
+
+        [IronSource loadBannerWithViewController:rootViewController size:bannerSize];
+        
+    });
 }
 
 #pragma mark - ATAdFormatInterstitial
@@ -50,19 +73,20 @@
 
 #pragma mark - ATAdFormatRewardedVideo
 - (void)startLoadRewardedVideoAdWithRequest:(AlexISBiddingRequest *)request {
-    [IronSource setLevelPlayRewardedVideoDelegate:(AlexISRewardedVideoCustomEvent *)request.customEvent];
+    [[AlexISRVDelegate sharedInstance] saveRewardedVideoCustomEvent:(AlexISRewardedVideoCustomEvent *)request.customEvent];
+    [IronSource setLevelPlayRewardedVideoDelegate:[AlexISRVDelegate sharedInstance]];
     [self checkReadyAfterSeconds:request];
 }
 
 int seconds = 0;
 - (void)checkReadyAfterSeconds:(AlexISBiddingRequest *)request {
     
-    AlexISRewardedVideoCustomEvent *rewardedVideoCustomEvent = (AlexISRewardedVideoCustomEvent *)request.customEvent;
     
     dispatch_source_set_event_handler(self.timer, ^{
+        AlexISRewardedVideoCustomEvent *rewardedVideoCustomEvent = (AlexISRewardedVideoCustomEvent *)request.customEvent;
         seconds += 2;
         BOOL has = [IronSource hasRewardedVideo];
-        if (has) {
+        if (has && rewardedVideoCustomEvent.adInfo) {
             NSString *price = [NSString stringWithFormat:@"%f",[rewardedVideoCustomEvent.adInfo.revenue doubleValue] * 1000];
             [AlexISC2SBiddingRequestManager disposeLoadSuccessCall:price customObject:rewardedVideoCustomEvent.adInfo unitID:rewardedVideoCustomEvent.networkUnitId];
             dispatch_source_cancel(self.timer);
@@ -70,11 +94,13 @@ int seconds = 0;
             return;
         }
         
-        if (seconds >= 16 && has == NO) {
+        
+        if (seconds >= 16 && (has == NO || (has && !rewardedVideoCustomEvent.adInfo))) {
             dispatch_source_cancel(self.timer);
             self.timer = nil;
             NSError *error = [NSError errorWithDomain:@"com.ofmIronsource.rewardedVideo" code:509 userInfo:@{NSLocalizedFailureReasonErrorKey:@"No ads to show"}];
             [AlexISC2SBiddingRequestManager disposeLoadFailCall:error key:kATSDKFailedToLoadInterstitialADMsg unitID:rewardedVideoCustomEvent.networkUnitId];
+            seconds = 0;
         }
     });
     dispatch_resume(self.timer);

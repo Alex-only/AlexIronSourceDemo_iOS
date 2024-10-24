@@ -34,9 +34,29 @@
 - (void)didCloseWithAdInfo:(ISAdInfo *)adInfo {
     [self trackRewardedVideoAdVideoEnd];
     [self trackRewardedVideoAdCloseRewarded:self.rewardGranted extra:@{kATADDelegateExtraDismissTypeKey:@(ATAdCloseUnknow)}];
+    
 }
 
 - (NSString *)networkUnitId {
     return self.serverInfo[@"plid"];
 }
+
+- (NSDictionary *)networkCustomInfo {
+    
+    NSMutableDictionary *customInfo = [[NSMutableDictionary alloc] init];
+    [customInfo setValue:self.adInfo.lifetime_revenue forKey:@"LifeTimeRevenue"];
+    [customInfo setValue:self.adInfo.revenue forKey:@"Revenue"];
+    [customInfo setValue:self.adInfo.ad_unit forKey:@"AdUnitId"];
+    [customInfo setValue:self.adInfo.instance_id forKey:@"CreativeId"];
+    [customInfo setValue:@"REWARDED" forKey:@"Format"];
+    [customInfo setValue:self.adInfo.ad_network forKey:@"AdNetwork"];
+    [customInfo setValue:@"IronSourceMediation" forKey:@"NetworkName"];
+    [customInfo setValue:self.adInfo.segment_name forKey:@"NetworkPlacement"];
+    [customInfo setValue:self.adInfo.country forKey:@"CountryCode"];
+    [customInfo setValue:self.adInfo.encrypted_cpm forKey:@"EncryptedCpm"];
+    [customInfo setValue:self.adInfo.conversion_value forKey:@"ConversionValue"];
+    [customInfo setValue:self.adInfo.ab forKey:@"AB"];
+    return customInfo;
+}
+
 @end

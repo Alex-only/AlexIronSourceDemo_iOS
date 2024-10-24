@@ -5,7 +5,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface AlexISRewardedVideoCustomEvent : ATRewardedVideoCustomEvent<LevelPlayRewardedVideoDelegate>
-@property (nonatomic, strong) ISAdInfo *adInfo;
+@property (atomic, strong) ISAdInfo *adInfo;
 @end
 
 NS_ASSUME_NONNULL_END

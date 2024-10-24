@@ -40,8 +40,5 @@
     [self.requestDic removeObjectForKey:unitID];
 }
 
-- (NSDictionary *)getRequests {
-    return self.requestDic;
-}
 
 @end

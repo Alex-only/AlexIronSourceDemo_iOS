@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		7B9BEB0E351A7AE691649383 /* Pods_AlexIronsourceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C322F60DA84E574094EEAC /* Pods_AlexIronsourceSDK.framework */; };
 		B180A9D9FE01042DA807CD6E /* Pods_AlexIronsourceSDKAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04658A7CBDBE99B4B74F7F6C /* Pods_AlexIronsourceSDKAdapter.framework */; };
+		E01AEFFB2CCA2B6B000E4D55 /* AlexISBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E01AEFF92CCA2B6B000E4D55 /* AlexISBannerCustomEvent.m */; };
+		E01AEFFC2CCA2B6B000E4D55 /* AlexISBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E01AEFF72CCA2B6B000E4D55 /* AlexISBannerAdapter.m */; };
+		E01AEFFD2CCA2B6B000E4D55 /* AlexISBannerCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E01AEFF82CCA2B6B000E4D55 /* AlexISBannerCustomEvent.h */; };
+		E01AEFFE2CCA2B6B000E4D55 /* AlexISBannerAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E01AEFF62CCA2B6B000E4D55 /* AlexISBannerAdapter.h */; };
+		E01AF0012CCA313D000E4D55 /* AlexISRVDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E01AEFFF2CCA313D000E4D55 /* AlexISRVDelegate.h */; };
+		E01AF0022CCA313D000E4D55 /* AlexISRVDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E01AF0002CCA313D000E4D55 /* AlexISRVDelegate.m */; };
 		E0E8CE442A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8CE332A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.m */; };
 		E0E8CE452A25DEF200B4C2FC /* AlexISInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8CE342A25DEF200B4C2FC /* AlexISInterstitialAdapter.m */; };
 		E0E8CE462A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E8CE352A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.h */; };
@@ -71,6 +77,12 @@
 		88A3E609DE96A984314C4434 /* Pods-AlexIronsourceSDKAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexIronsourceSDKAdapter.debug.xcconfig"; path = "Target Support Files/Pods-AlexIronsourceSDKAdapter/Pods-AlexIronsourceSDKAdapter.debug.xcconfig"; sourceTree = "<group>"; };
 		AEB7C8913E50E741903EF5D1 /* Pods-AlexIronsourceSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexIronsourceSDK.release.xcconfig"; path = "Target Support Files/Pods-AlexIronsourceSDK/Pods-AlexIronsourceSDK.release.xcconfig"; sourceTree = "<group>"; };
 		B9F394CF3575B5BBA6CB7A2F /* Pods-IronsourceCustomSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronsourceCustomSDK.debug.xcconfig"; path = "Target Support Files/Pods-IronsourceCustomSDK/Pods-IronsourceCustomSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		E01AEFF62CCA2B6B000E4D55 /* AlexISBannerAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISBannerAdapter.h; sourceTree = "<group>"; };
+		E01AEFF72CCA2B6B000E4D55 /* AlexISBannerAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISBannerAdapter.m; sourceTree = "<group>"; };
+		E01AEFF82CCA2B6B000E4D55 /* AlexISBannerCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISBannerCustomEvent.h; sourceTree = "<group>"; };
+		E01AEFF92CCA2B6B000E4D55 /* AlexISBannerCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISBannerCustomEvent.m; sourceTree = "<group>"; };
+		E01AEFFF2CCA313D000E4D55 /* AlexISRVDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISRVDelegate.h; sourceTree = "<group>"; };
+		E01AF0002CCA313D000E4D55 /* AlexISRVDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISRVDelegate.m; sourceTree = "<group>"; };
 		E0E8CE332A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexISInterstitialCustomEvent.m; sourceTree = "<group>"; };
 		E0E8CE342A25DEF200B4C2FC /* AlexISInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexISInterstitialAdapter.m; sourceTree = "<group>"; };
 		E0E8CE352A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexISInterstitialCustomEvent.h; sourceTree = "<group>"; };
@@ -149,9 +161,21 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		E01AEFFA2CCA2B6B000E4D55 /* banner */ = {
+			isa = PBXGroup;
+			children = (
+				E01AEFF62CCA2B6B000E4D55 /* AlexISBannerAdapter.h */,
+				E01AEFF72CCA2B6B000E4D55 /* AlexISBannerAdapter.m */,
+				E01AEFF82CCA2B6B000E4D55 /* AlexISBannerCustomEvent.h */,
+				E01AEFF92CCA2B6B000E4D55 /* AlexISBannerCustomEvent.m */,
+			);
+			path = banner;
+			sourceTree = "<group>";
+		};
 		E0E8CE312A25DEF200B4C2FC /* IronsourceMiddle */ = {
 			isa = PBXGroup;
 			children = (
+				E01AEFFA2CCA2B6B000E4D55 /* banner */,
 				E0E8CE412A25DEF200B4C2FC /* Base */,
 				E0E8CE322A25DEF200B4C2FC /* Interstitial */,
 				E0E8CE372A25DEF200B4C2FC /* RewardedVideo */,
@@ -174,6 +198,8 @@
 		E0E8CE372A25DEF200B4C2FC /* RewardedVideo */ = {
 			isa = PBXGroup;
 			children = (
+				E01AEFFF2CCA313D000E4D55 /* AlexISRVDelegate.h */,
+				E01AF0002CCA313D000E4D55 /* AlexISRVDelegate.m */,
 				E0E8CE382A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.h */,
 				E0E8CE3A2A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.m */,
 				E0E8CE3B2A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.h */,
@@ -259,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0E8CE4C2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.h in Headers */,
+				E01AF0012CCA313D000E4D55 /* AlexISRVDelegate.h in Headers */,
 				E0E8CE462A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.h in Headers */,
 				E0E8CE472A25DEF200B4C2FC /* AlexISInterstitialAdapter.h in Headers */,
 				E0E8CE4D2A25DEF200B4C2FC /* AlexISBiddingRequest.h in Headers */,
@@ -266,6 +293,8 @@
 				E0E8CE502A25DEF200B4C2FC /* AlexISBaseManager.h in Headers */,
 				E0E8CE542A25DF1800B4C2FC /* AlexNetworkC2STool.h in Headers */,
 				E0EFCBF22A1B506A00243308 /* AlexIronsourceSDKAdapter.h in Headers */,
+				E01AEFFD2CCA2B6B000E4D55 /* AlexISBannerCustomEvent.h in Headers */,
+				E01AEFFE2CCA2B6B000E4D55 /* AlexISBannerAdapter.h in Headers */,
 				E0E8CE4B2A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +311,6 @@
 				E0EFCBCB2A1B505000243308 /* Frameworks */,
 				E0EFCBCC2A1B505000243308 /* Resources */,
 				E0EFCBFA2A1B506A00243308 /* Embed Frameworks */,
-				0DC7491BA49CC955A1F13850 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,7 +331,6 @@
 				E0EFCBEB2A1B506A00243308 /* Sources */,
 				E0EFCBEC2A1B506A00243308 /* Frameworks */,
 				E0EFCBED2A1B506A00243308 /* Resources */,
-				B729D1C935231AD47B016AE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -371,23 +398,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0DC7491BA49CC955A1F13850 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlexIronsourceSDK/Pods-AlexIronsourceSDK-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlexIronsourceSDK/Pods-AlexIronsourceSDK-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlexIronsourceSDK/Pods-AlexIronsourceSDK-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		297933EE410BDA30B953F336 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -432,23 +442,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		B729D1C935231AD47B016AE0 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlexIronsourceSDKAdapter/Pods-AlexIronsourceSDKAdapter-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-AlexIronsourceSDKAdapter/Pods-AlexIronsourceSDKAdapter-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlexIronsourceSDKAdapter/Pods-AlexIronsourceSDKAdapter-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -467,6 +460,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E01AF0022CCA313D000E4D55 /* AlexISRVDelegate.m in Sources */,
 				E0E8CE442A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.m in Sources */,
 				E0E8CE552A25DF1800B4C2FC /* AlexNetworkC2STool.m in Sources */,
 				E0E8CE512A25DEF200B4C2FC /* AlexISBaseManager.m in Sources */,
@@ -474,6 +468,8 @@
 				E0E8CE4E2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.m in Sources */,
 				E0E8CE4F2A25DEF200B4C2FC /* AlexISBiddingRequest.m in Sources */,
 				E0E8CE492A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.m in Sources */,
+				E01AEFFB2CCA2B6B000E4D55 /* AlexISBannerCustomEvent.m in Sources */,
+				E01AEFFC2CCA2B6B000E4D55 /* AlexISBannerAdapter.m in Sources */,
 				E0E8CE4A2A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

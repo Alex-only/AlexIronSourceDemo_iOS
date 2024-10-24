@@ -5,7 +5,7 @@
 #import "AlexISBaseManager.h"
 #import <IronSource/IronSource.h>
 #import "AlexNetworkC2STool.h"
-
+#import "AlexISRVDelegate.h"
 @interface AlexISRewardedVideoAdapter()
 
 @property (nonatomic, strong) AlexISRewardedVideoCustomEvent *customEvent;
@@ -33,7 +33,7 @@
         [self.customEvent trackRewardedVideoAdLoaded:self.customEvent.networkUnitId
                                              adExtra:nil];
     }else {
-        [IronSource setLevelPlayRewardedVideoDelegate:(AlexISRewardedVideoCustomEvent *)request.customEvent];
+        [IronSource setLevelPlayRewardedVideoDelegate:[AlexISRVDelegate sharedInstance]];
     }
     [[AlexNetworkC2STool sharedInstance] removeRequestItemWithUnitID:serverInfo[@"plid"]];
 }

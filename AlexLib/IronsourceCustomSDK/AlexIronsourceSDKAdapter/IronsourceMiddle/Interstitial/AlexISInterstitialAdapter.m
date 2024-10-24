@@ -25,6 +25,7 @@
 #pragma mark - load
 - (void)loadADWithInfo:(NSDictionary*)serverInfo localInfo:(NSDictionary*)localInfo completion:(void (^)(NSArray<NSDictionary *> *, NSError *))completion {
     
+    
     AlexISBiddingRequest *request = [[AlexNetworkC2STool sharedInstance] getRequestItemWithUnitID:serverInfo[@"plid"]];
     self.customEvent = (AlexISInterstitialCustomEvent *)request.customEvent;
     self.customEvent.requestCompletionBlock = completion;
