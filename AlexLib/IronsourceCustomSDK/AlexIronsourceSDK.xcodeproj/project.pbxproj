@@ -9,28 +9,28 @@
 /* Begin PBXBuildFile section */
 		7B9BEB0E351A7AE691649383 /* Pods_AlexIronsourceSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75C322F60DA84E574094EEAC /* Pods_AlexIronsourceSDK.framework */; };
 		B180A9D9FE01042DA807CD6E /* Pods_AlexIronsourceSDKAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04658A7CBDBE99B4B74F7F6C /* Pods_AlexIronsourceSDKAdapter.framework */; };
-		E01AEFFB2CCA2B6B000E4D55 /* AlexISBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E01AEFF92CCA2B6B000E4D55 /* AlexISBannerCustomEvent.m */; };
-		E01AEFFC2CCA2B6B000E4D55 /* AlexISBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E01AEFF72CCA2B6B000E4D55 /* AlexISBannerAdapter.m */; };
-		E01AEFFD2CCA2B6B000E4D55 /* AlexISBannerCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E01AEFF82CCA2B6B000E4D55 /* AlexISBannerCustomEvent.h */; };
-		E01AEFFE2CCA2B6B000E4D55 /* AlexISBannerAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E01AEFF62CCA2B6B000E4D55 /* AlexISBannerAdapter.h */; };
-		E01AF0012CCA313D000E4D55 /* AlexISRVDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = E01AEFFF2CCA313D000E4D55 /* AlexISRVDelegate.h */; };
-		E01AF0022CCA313D000E4D55 /* AlexISRVDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E01AF0002CCA313D000E4D55 /* AlexISRVDelegate.m */; };
-		E0E8CE442A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8CE332A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.m */; };
-		E0E8CE452A25DEF200B4C2FC /* AlexISInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8CE342A25DEF200B4C2FC /* AlexISInterstitialAdapter.m */; };
-		E0E8CE462A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E8CE352A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.h */; };
-		E0E8CE472A25DEF200B4C2FC /* AlexISInterstitialAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E8CE362A25DEF200B4C2FC /* AlexISInterstitialAdapter.h */; };
-		E0E8CE482A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E8CE382A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.h */; };
-		E0E8CE492A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8CE392A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.m */; };
-		E0E8CE4A2A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8CE3A2A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.m */; };
-		E0E8CE4B2A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E8CE3B2A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.h */; };
-		E0E8CE4C2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E8CE3D2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.h */; };
-		E0E8CE4D2A25DEF200B4C2FC /* AlexISBiddingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E8CE3E2A25DEF200B4C2FC /* AlexISBiddingRequest.h */; };
-		E0E8CE4E2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8CE3F2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.m */; };
-		E0E8CE4F2A25DEF200B4C2FC /* AlexISBiddingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8CE402A25DEF200B4C2FC /* AlexISBiddingRequest.m */; };
-		E0E8CE502A25DEF200B4C2FC /* AlexISBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E8CE422A25DEF200B4C2FC /* AlexISBaseManager.h */; };
-		E0E8CE512A25DEF200B4C2FC /* AlexISBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8CE432A25DEF200B4C2FC /* AlexISBaseManager.m */; };
-		E0E8CE542A25DF1800B4C2FC /* AlexNetworkC2STool.h in Headers */ = {isa = PBXBuildFile; fileRef = E0E8CE522A25DF1700B4C2FC /* AlexNetworkC2STool.h */; };
-		E0E8CE552A25DF1800B4C2FC /* AlexNetworkC2STool.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E8CE532A25DF1800B4C2FC /* AlexNetworkC2STool.m */; };
+		CA3885DE2CCB896B009F6002 /* AlexISInterstitialAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885D22CCB896B009F6002 /* AlexISInterstitialAdapter.m */; };
+		CA3885DF2CCB896B009F6002 /* AlexISBaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885C82CCB896B009F6002 /* AlexISBaseManager.m */; };
+		CA3885E02CCB896B009F6002 /* AlexISC2SBiddingRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885CF2CCB896B009F6002 /* AlexISC2SBiddingRequestManager.m */; };
+		CA3885E12CCB896B009F6002 /* AlexISRewardedVideoAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885D72CCB896B009F6002 /* AlexISRewardedVideoAdapter.m */; };
+		CA3885E22CCB896B009F6002 /* AlexISBannerCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885C52CCB896B009F6002 /* AlexISBannerCustomEvent.m */; };
+		CA3885E32CCB896B009F6002 /* AlexISRewardedVideoCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885D92CCB896B009F6002 /* AlexISRewardedVideoCustomEvent.m */; };
+		CA3885E42CCB896B009F6002 /* AlexISBiddingRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885CD2CCB896B009F6002 /* AlexISBiddingRequest.m */; };
+		CA3885E52CCB896B009F6002 /* AlexISBannerAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885C32CCB896B009F6002 /* AlexISBannerAdapter.m */; };
+		CA3885E62CCB896B009F6002 /* AlexISRVDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885DB2CCB896B009F6002 /* AlexISRVDelegate.m */; };
+		CA3885E72CCB896B009F6002 /* AlexNetworkC2STool.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885CA2CCB896B009F6002 /* AlexNetworkC2STool.m */; };
+		CA3885E82CCB896B009F6002 /* AlexISInterstitialCustomEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = CA3885D42CCB896B009F6002 /* AlexISInterstitialCustomEvent.m */; };
+		CA3885E92CCB896B009F6002 /* AlexISBaseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885C72CCB896B009F6002 /* AlexISBaseManager.h */; };
+		CA3885EA2CCB896B009F6002 /* AlexNetworkC2STool.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885C92CCB896B009F6002 /* AlexNetworkC2STool.h */; };
+		CA3885EB2CCB896B009F6002 /* AlexISInterstitialAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885D12CCB896B009F6002 /* AlexISInterstitialAdapter.h */; };
+		CA3885EC2CCB896B009F6002 /* AlexISBannerAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885C22CCB896B009F6002 /* AlexISBannerAdapter.h */; };
+		CA3885ED2CCB896B009F6002 /* AlexISBannerCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885C42CCB896B009F6002 /* AlexISBannerCustomEvent.h */; };
+		CA3885EE2CCB896B009F6002 /* AlexISBiddingRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885CC2CCB896B009F6002 /* AlexISBiddingRequest.h */; };
+		CA3885EF2CCB896B009F6002 /* AlexISRVDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885DA2CCB896B009F6002 /* AlexISRVDelegate.h */; };
+		CA3885F02CCB896B009F6002 /* AlexISC2SBiddingRequestManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885CE2CCB896B009F6002 /* AlexISC2SBiddingRequestManager.h */; };
+		CA3885F12CCB896B009F6002 /* AlexISInterstitialCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885D32CCB896B009F6002 /* AlexISInterstitialCustomEvent.h */; };
+		CA3885F22CCB896B009F6002 /* AlexISRewardedVideoAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885D62CCB896B009F6002 /* AlexISRewardedVideoAdapter.h */; };
+		CA3885F32CCB896B009F6002 /* AlexISRewardedVideoCustomEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = CA3885D82CCB896B009F6002 /* AlexISRewardedVideoCustomEvent.h */; };
 		E0EFCBD32A1B505000243308 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCBD22A1B505000243308 /* AppDelegate.m */; };
 		E0EFCBD62A1B505000243308 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCBD52A1B505000243308 /* SceneDelegate.m */; };
 		E0EFCBD92A1B505000243308 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0EFCBD82A1B505000243308 /* ViewController.m */; };
@@ -77,28 +77,28 @@
 		88A3E609DE96A984314C4434 /* Pods-AlexIronsourceSDKAdapter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexIronsourceSDKAdapter.debug.xcconfig"; path = "Target Support Files/Pods-AlexIronsourceSDKAdapter/Pods-AlexIronsourceSDKAdapter.debug.xcconfig"; sourceTree = "<group>"; };
 		AEB7C8913E50E741903EF5D1 /* Pods-AlexIronsourceSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlexIronsourceSDK.release.xcconfig"; path = "Target Support Files/Pods-AlexIronsourceSDK/Pods-AlexIronsourceSDK.release.xcconfig"; sourceTree = "<group>"; };
 		B9F394CF3575B5BBA6CB7A2F /* Pods-IronsourceCustomSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IronsourceCustomSDK.debug.xcconfig"; path = "Target Support Files/Pods-IronsourceCustomSDK/Pods-IronsourceCustomSDK.debug.xcconfig"; sourceTree = "<group>"; };
-		E01AEFF62CCA2B6B000E4D55 /* AlexISBannerAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISBannerAdapter.h; sourceTree = "<group>"; };
-		E01AEFF72CCA2B6B000E4D55 /* AlexISBannerAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISBannerAdapter.m; sourceTree = "<group>"; };
-		E01AEFF82CCA2B6B000E4D55 /* AlexISBannerCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISBannerCustomEvent.h; sourceTree = "<group>"; };
-		E01AEFF92CCA2B6B000E4D55 /* AlexISBannerCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISBannerCustomEvent.m; sourceTree = "<group>"; };
-		E01AEFFF2CCA313D000E4D55 /* AlexISRVDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISRVDelegate.h; sourceTree = "<group>"; };
-		E01AF0002CCA313D000E4D55 /* AlexISRVDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISRVDelegate.m; sourceTree = "<group>"; };
-		E0E8CE332A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexISInterstitialCustomEvent.m; sourceTree = "<group>"; };
-		E0E8CE342A25DEF200B4C2FC /* AlexISInterstitialAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexISInterstitialAdapter.m; sourceTree = "<group>"; };
-		E0E8CE352A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexISInterstitialCustomEvent.h; sourceTree = "<group>"; };
-		E0E8CE362A25DEF200B4C2FC /* AlexISInterstitialAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexISInterstitialAdapter.h; sourceTree = "<group>"; };
-		E0E8CE382A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexISRewardedVideoAdapter.h; sourceTree = "<group>"; };
-		E0E8CE392A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexISRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
-		E0E8CE3A2A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexISRewardedVideoAdapter.m; sourceTree = "<group>"; };
-		E0E8CE3B2A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexISRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
-		E0E8CE3D2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexISC2SBiddingRequestManager.h; sourceTree = "<group>"; };
-		E0E8CE3E2A25DEF200B4C2FC /* AlexISBiddingRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexISBiddingRequest.h; sourceTree = "<group>"; };
-		E0E8CE3F2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexISC2SBiddingRequestManager.m; sourceTree = "<group>"; };
-		E0E8CE402A25DEF200B4C2FC /* AlexISBiddingRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexISBiddingRequest.m; sourceTree = "<group>"; };
-		E0E8CE422A25DEF200B4C2FC /* AlexISBaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexISBaseManager.h; sourceTree = "<group>"; };
-		E0E8CE432A25DEF200B4C2FC /* AlexISBaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexISBaseManager.m; sourceTree = "<group>"; };
-		E0E8CE522A25DF1700B4C2FC /* AlexNetworkC2STool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlexNetworkC2STool.h; sourceTree = "<group>"; };
-		E0E8CE532A25DF1800B4C2FC /* AlexNetworkC2STool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlexNetworkC2STool.m; sourceTree = "<group>"; };
+		CA3885C22CCB896B009F6002 /* AlexISBannerAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISBannerAdapter.h; sourceTree = "<group>"; };
+		CA3885C32CCB896B009F6002 /* AlexISBannerAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISBannerAdapter.m; sourceTree = "<group>"; };
+		CA3885C42CCB896B009F6002 /* AlexISBannerCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISBannerCustomEvent.h; sourceTree = "<group>"; };
+		CA3885C52CCB896B009F6002 /* AlexISBannerCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISBannerCustomEvent.m; sourceTree = "<group>"; };
+		CA3885C72CCB896B009F6002 /* AlexISBaseManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISBaseManager.h; sourceTree = "<group>"; };
+		CA3885C82CCB896B009F6002 /* AlexISBaseManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISBaseManager.m; sourceTree = "<group>"; };
+		CA3885C92CCB896B009F6002 /* AlexNetworkC2STool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexNetworkC2STool.h; sourceTree = "<group>"; };
+		CA3885CA2CCB896B009F6002 /* AlexNetworkC2STool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexNetworkC2STool.m; sourceTree = "<group>"; };
+		CA3885CC2CCB896B009F6002 /* AlexISBiddingRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISBiddingRequest.h; sourceTree = "<group>"; };
+		CA3885CD2CCB896B009F6002 /* AlexISBiddingRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISBiddingRequest.m; sourceTree = "<group>"; };
+		CA3885CE2CCB896B009F6002 /* AlexISC2SBiddingRequestManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISC2SBiddingRequestManager.h; sourceTree = "<group>"; };
+		CA3885CF2CCB896B009F6002 /* AlexISC2SBiddingRequestManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISC2SBiddingRequestManager.m; sourceTree = "<group>"; };
+		CA3885D12CCB896B009F6002 /* AlexISInterstitialAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISInterstitialAdapter.h; sourceTree = "<group>"; };
+		CA3885D22CCB896B009F6002 /* AlexISInterstitialAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISInterstitialAdapter.m; sourceTree = "<group>"; };
+		CA3885D32CCB896B009F6002 /* AlexISInterstitialCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISInterstitialCustomEvent.h; sourceTree = "<group>"; };
+		CA3885D42CCB896B009F6002 /* AlexISInterstitialCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISInterstitialCustomEvent.m; sourceTree = "<group>"; };
+		CA3885D62CCB896B009F6002 /* AlexISRewardedVideoAdapter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISRewardedVideoAdapter.h; sourceTree = "<group>"; };
+		CA3885D72CCB896B009F6002 /* AlexISRewardedVideoAdapter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISRewardedVideoAdapter.m; sourceTree = "<group>"; };
+		CA3885D82CCB896B009F6002 /* AlexISRewardedVideoCustomEvent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISRewardedVideoCustomEvent.h; sourceTree = "<group>"; };
+		CA3885D92CCB896B009F6002 /* AlexISRewardedVideoCustomEvent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISRewardedVideoCustomEvent.m; sourceTree = "<group>"; };
+		CA3885DA2CCB896B009F6002 /* AlexISRVDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlexISRVDelegate.h; sourceTree = "<group>"; };
+		CA3885DB2CCB896B009F6002 /* AlexISRVDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlexISRVDelegate.m; sourceTree = "<group>"; };
 		E0EFCBCE2A1B505000243308 /* AlexIronsourceSDK.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlexIronsourceSDK.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0EFCBD12A1B505000243308 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E0EFCBD22A1B505000243308 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -161,73 +161,73 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E01AEFFA2CCA2B6B000E4D55 /* banner */ = {
+		CA3885C62CCB896B009F6002 /* banner */ = {
 			isa = PBXGroup;
 			children = (
-				E01AEFF62CCA2B6B000E4D55 /* AlexISBannerAdapter.h */,
-				E01AEFF72CCA2B6B000E4D55 /* AlexISBannerAdapter.m */,
-				E01AEFF82CCA2B6B000E4D55 /* AlexISBannerCustomEvent.h */,
-				E01AEFF92CCA2B6B000E4D55 /* AlexISBannerCustomEvent.m */,
+				CA3885C22CCB896B009F6002 /* AlexISBannerAdapter.h */,
+				CA3885C32CCB896B009F6002 /* AlexISBannerAdapter.m */,
+				CA3885C42CCB896B009F6002 /* AlexISBannerCustomEvent.h */,
+				CA3885C52CCB896B009F6002 /* AlexISBannerCustomEvent.m */,
 			);
 			path = banner;
 			sourceTree = "<group>";
 		};
-		E0E8CE312A25DEF200B4C2FC /* IronsourceMiddle */ = {
+		CA3885CB2CCB896B009F6002 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				E01AEFFA2CCA2B6B000E4D55 /* banner */,
-				E0E8CE412A25DEF200B4C2FC /* Base */,
-				E0E8CE322A25DEF200B4C2FC /* Interstitial */,
-				E0E8CE372A25DEF200B4C2FC /* RewardedVideo */,
-				E0E8CE3C2A25DEF200B4C2FC /* C2S */,
+				CA3885C72CCB896B009F6002 /* AlexISBaseManager.h */,
+				CA3885C82CCB896B009F6002 /* AlexISBaseManager.m */,
+				CA3885C92CCB896B009F6002 /* AlexNetworkC2STool.h */,
+				CA3885CA2CCB896B009F6002 /* AlexNetworkC2STool.m */,
 			);
-			path = IronsourceMiddle;
+			path = Base;
 			sourceTree = "<group>";
 		};
-		E0E8CE322A25DEF200B4C2FC /* Interstitial */ = {
+		CA3885D02CCB896B009F6002 /* C2S */ = {
 			isa = PBXGroup;
 			children = (
-				E0E8CE362A25DEF200B4C2FC /* AlexISInterstitialAdapter.h */,
-				E0E8CE342A25DEF200B4C2FC /* AlexISInterstitialAdapter.m */,
-				E0E8CE352A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.h */,
-				E0E8CE332A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.m */,
-			);
-			path = Interstitial;
-			sourceTree = "<group>";
-		};
-		E0E8CE372A25DEF200B4C2FC /* RewardedVideo */ = {
-			isa = PBXGroup;
-			children = (
-				E01AEFFF2CCA313D000E4D55 /* AlexISRVDelegate.h */,
-				E01AF0002CCA313D000E4D55 /* AlexISRVDelegate.m */,
-				E0E8CE382A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.h */,
-				E0E8CE3A2A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.m */,
-				E0E8CE3B2A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.h */,
-				E0E8CE392A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.m */,
-			);
-			path = RewardedVideo;
-			sourceTree = "<group>";
-		};
-		E0E8CE3C2A25DEF200B4C2FC /* C2S */ = {
-			isa = PBXGroup;
-			children = (
-				E0E8CE3E2A25DEF200B4C2FC /* AlexISBiddingRequest.h */,
-				E0E8CE402A25DEF200B4C2FC /* AlexISBiddingRequest.m */,
-				E0E8CE3D2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.h */,
-				E0E8CE3F2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.m */,
+				CA3885CC2CCB896B009F6002 /* AlexISBiddingRequest.h */,
+				CA3885CD2CCB896B009F6002 /* AlexISBiddingRequest.m */,
+				CA3885CE2CCB896B009F6002 /* AlexISC2SBiddingRequestManager.h */,
+				CA3885CF2CCB896B009F6002 /* AlexISC2SBiddingRequestManager.m */,
 			);
 			path = C2S;
 			sourceTree = "<group>";
 		};
-		E0E8CE412A25DEF200B4C2FC /* Base */ = {
+		CA3885D52CCB896B009F6002 /* Interstitial */ = {
 			isa = PBXGroup;
 			children = (
-				E0E8CE522A25DF1700B4C2FC /* AlexNetworkC2STool.h */,
-				E0E8CE532A25DF1800B4C2FC /* AlexNetworkC2STool.m */,
-				E0E8CE422A25DEF200B4C2FC /* AlexISBaseManager.h */,
-				E0E8CE432A25DEF200B4C2FC /* AlexISBaseManager.m */,
+				CA3885D12CCB896B009F6002 /* AlexISInterstitialAdapter.h */,
+				CA3885D22CCB896B009F6002 /* AlexISInterstitialAdapter.m */,
+				CA3885D32CCB896B009F6002 /* AlexISInterstitialCustomEvent.h */,
+				CA3885D42CCB896B009F6002 /* AlexISInterstitialCustomEvent.m */,
 			);
-			path = Base;
+			path = Interstitial;
+			sourceTree = "<group>";
+		};
+		CA3885DC2CCB896B009F6002 /* RewardedVideo */ = {
+			isa = PBXGroup;
+			children = (
+				CA3885D62CCB896B009F6002 /* AlexISRewardedVideoAdapter.h */,
+				CA3885D72CCB896B009F6002 /* AlexISRewardedVideoAdapter.m */,
+				CA3885D82CCB896B009F6002 /* AlexISRewardedVideoCustomEvent.h */,
+				CA3885D92CCB896B009F6002 /* AlexISRewardedVideoCustomEvent.m */,
+				CA3885DA2CCB896B009F6002 /* AlexISRVDelegate.h */,
+				CA3885DB2CCB896B009F6002 /* AlexISRVDelegate.m */,
+			);
+			path = RewardedVideo;
+			sourceTree = "<group>";
+		};
+		CA3885DD2CCB896B009F6002 /* IronsourceMiddle */ = {
+			isa = PBXGroup;
+			children = (
+				CA3885C62CCB896B009F6002 /* banner */,
+				CA3885CB2CCB896B009F6002 /* Base */,
+				CA3885D02CCB896B009F6002 /* C2S */,
+				CA3885D52CCB896B009F6002 /* Interstitial */,
+				CA3885DC2CCB896B009F6002 /* RewardedVideo */,
+			);
+			path = IronsourceMiddle;
 			sourceTree = "<group>";
 		};
 		E0EFCBC52A1B505000243308 = {
@@ -271,7 +271,7 @@
 		E0EFCBF02A1B506A00243308 /* AlexIronsourceSDKAdapter */ = {
 			isa = PBXGroup;
 			children = (
-				E0E8CE312A25DEF200B4C2FC /* IronsourceMiddle */,
+				CA3885DD2CCB896B009F6002 /* IronsourceMiddle */,
 				E0EFCBF12A1B506A00243308 /* AlexIronsourceSDKAdapter.h */,
 			);
 			path = AlexIronsourceSDKAdapter;
@@ -284,18 +284,18 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E0E8CE4C2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.h in Headers */,
-				E01AF0012CCA313D000E4D55 /* AlexISRVDelegate.h in Headers */,
-				E0E8CE462A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.h in Headers */,
-				E0E8CE472A25DEF200B4C2FC /* AlexISInterstitialAdapter.h in Headers */,
-				E0E8CE4D2A25DEF200B4C2FC /* AlexISBiddingRequest.h in Headers */,
-				E0E8CE482A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.h in Headers */,
-				E0E8CE502A25DEF200B4C2FC /* AlexISBaseManager.h in Headers */,
-				E0E8CE542A25DF1800B4C2FC /* AlexNetworkC2STool.h in Headers */,
+				CA3885E92CCB896B009F6002 /* AlexISBaseManager.h in Headers */,
+				CA3885EA2CCB896B009F6002 /* AlexNetworkC2STool.h in Headers */,
+				CA3885EB2CCB896B009F6002 /* AlexISInterstitialAdapter.h in Headers */,
+				CA3885EC2CCB896B009F6002 /* AlexISBannerAdapter.h in Headers */,
+				CA3885ED2CCB896B009F6002 /* AlexISBannerCustomEvent.h in Headers */,
+				CA3885EE2CCB896B009F6002 /* AlexISBiddingRequest.h in Headers */,
+				CA3885EF2CCB896B009F6002 /* AlexISRVDelegate.h in Headers */,
+				CA3885F02CCB896B009F6002 /* AlexISC2SBiddingRequestManager.h in Headers */,
+				CA3885F12CCB896B009F6002 /* AlexISInterstitialCustomEvent.h in Headers */,
+				CA3885F22CCB896B009F6002 /* AlexISRewardedVideoAdapter.h in Headers */,
+				CA3885F32CCB896B009F6002 /* AlexISRewardedVideoCustomEvent.h in Headers */,
 				E0EFCBF22A1B506A00243308 /* AlexIronsourceSDKAdapter.h in Headers */,
-				E01AEFFD2CCA2B6B000E4D55 /* AlexISBannerCustomEvent.h in Headers */,
-				E01AEFFE2CCA2B6B000E4D55 /* AlexISBannerAdapter.h in Headers */,
-				E0E8CE4B2A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,17 +460,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E01AF0022CCA313D000E4D55 /* AlexISRVDelegate.m in Sources */,
-				E0E8CE442A25DEF200B4C2FC /* AlexISInterstitialCustomEvent.m in Sources */,
-				E0E8CE552A25DF1800B4C2FC /* AlexNetworkC2STool.m in Sources */,
-				E0E8CE512A25DEF200B4C2FC /* AlexISBaseManager.m in Sources */,
-				E0E8CE452A25DEF200B4C2FC /* AlexISInterstitialAdapter.m in Sources */,
-				E0E8CE4E2A25DEF200B4C2FC /* AlexISC2SBiddingRequestManager.m in Sources */,
-				E0E8CE4F2A25DEF200B4C2FC /* AlexISBiddingRequest.m in Sources */,
-				E0E8CE492A25DEF200B4C2FC /* AlexISRewardedVideoCustomEvent.m in Sources */,
-				E01AEFFB2CCA2B6B000E4D55 /* AlexISBannerCustomEvent.m in Sources */,
-				E01AEFFC2CCA2B6B000E4D55 /* AlexISBannerAdapter.m in Sources */,
-				E0E8CE4A2A25DEF200B4C2FC /* AlexISRewardedVideoAdapter.m in Sources */,
+				CA3885DE2CCB896B009F6002 /* AlexISInterstitialAdapter.m in Sources */,
+				CA3885DF2CCB896B009F6002 /* AlexISBaseManager.m in Sources */,
+				CA3885E02CCB896B009F6002 /* AlexISC2SBiddingRequestManager.m in Sources */,
+				CA3885E12CCB896B009F6002 /* AlexISRewardedVideoAdapter.m in Sources */,
+				CA3885E22CCB896B009F6002 /* AlexISBannerCustomEvent.m in Sources */,
+				CA3885E32CCB896B009F6002 /* AlexISRewardedVideoCustomEvent.m in Sources */,
+				CA3885E42CCB896B009F6002 /* AlexISBiddingRequest.m in Sources */,
+				CA3885E52CCB896B009F6002 /* AlexISBannerAdapter.m in Sources */,
+				CA3885E62CCB896B009F6002 /* AlexISRVDelegate.m in Sources */,
+				CA3885E72CCB896B009F6002 /* AlexNetworkC2STool.m in Sources */,
+				CA3885E82CCB896B009F6002 /* AlexISInterstitialCustomEvent.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,6 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property(nonatomic, copy) NSArray* nativeAds;
 @property(nonatomic, copy) void(^bidCompletion)(ATBidInfo * _Nullable bidInfo, NSError * _Nullable error);
 @property(nonatomic, assign) ATAdFormat adType;
+@property (atomic, assign) NSInteger rvCheckTime;
+
 @end
 
 NS_ASSUME_NONNULL_END

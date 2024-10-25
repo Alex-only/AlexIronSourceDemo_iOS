@@ -7,13 +7,15 @@
 //
 
 #import "AlexISRVDelegate.h"
+#import "ATSafeThreadArray.h"
+#import "ATUtilities.h"
 
 
 @interface AlexISRVDelegate()
 
-@property (nonatomic, strong) NSMutableArray <AlexISRewardedVideoCustomEvent *>*rvCustomEventArray;
+@property (nonatomic, strong) ATSafeThreadArray <AlexISRewardedVideoCustomEvent *>*rvCustomEventArray;
 
-@property (nonatomic, strong) NSMutableDictionary *adInFoDic;
+@property (nonatomic, strong) ATSafeThreadDictionary *adInFoDic;
 
 @end
 
@@ -24,17 +26,15 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         sharedManager = [[AlexISRVDelegate alloc] init];
-        sharedManager.rvCustomEventArray = [NSMutableArray array];
-        sharedManager.adInFoDic = [NSMutableDictionary dictionary];
+        sharedManager.rvCustomEventArray = [ATSafeThreadArray array];
+        sharedManager.adInFoDic = [ATSafeThreadDictionary dictionary];
 
     });
     return sharedManager;
 }
 
 - (void)saveRewardedVideoCustomEvent:(AlexISRewardedVideoCustomEvent *)rewardedVideoCustomEvent {
-    if (rewardedVideoCustomEvent) {
-        [self.rvCustomEventArray addObject:rewardedVideoCustomEvent];
-    }
+    [self.rvCustomEventArray AT_addObjectVerify:rewardedVideoCustomEvent];
     [self.adInFoDic.allValues enumerateObjectsUsingBlock:^(ISAdInfo  *adInfo, NSUInteger idx, BOOL * _Nonnull stop) {
         if (!rewardedVideoCustomEvent.adInfo) {
             rewardedVideoCustomEvent.adInfo = adInfo;
@@ -55,9 +55,7 @@
         }
     }];
     if (!isUse) {
-        if (adInfo && adInfo.auction_id) {
-            [self.adInFoDic setValue:adInfo forKey:adInfo.auction_id];
-        }
+        [self.adInFoDic AT_setDictValue:adInfo key:adInfo.auction_id];
     }
 }
 

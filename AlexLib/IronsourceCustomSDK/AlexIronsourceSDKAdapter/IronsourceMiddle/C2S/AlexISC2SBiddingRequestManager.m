@@ -11,8 +11,6 @@
 
 @interface AlexISC2SBiddingRequestManager()
 
-@property(nonatomic) dispatch_source_t timer;
-
 @end
 
 @implementation AlexISC2SBiddingRequestManager
@@ -78,32 +76,32 @@
     [self checkReadyAfterSeconds:request];
 }
 
-int seconds = 0;
+//int seconds = 0;
 - (void)checkReadyAfterSeconds:(AlexISBiddingRequest *)request {
-    
-    
-    dispatch_source_set_event_handler(self.timer, ^{
-        AlexISRewardedVideoCustomEvent *rewardedVideoCustomEvent = (AlexISRewardedVideoCustomEvent *)request.customEvent;
-        seconds += 2;
-        BOOL has = [IronSource hasRewardedVideo];
-        if (has && rewardedVideoCustomEvent.adInfo) {
-            NSString *price = [NSString stringWithFormat:@"%f",[rewardedVideoCustomEvent.adInfo.revenue doubleValue] * 1000];
-            [AlexISC2SBiddingRequestManager disposeLoadSuccessCall:price customObject:rewardedVideoCustomEvent.adInfo unitID:rewardedVideoCustomEvent.networkUnitId];
-            dispatch_source_cancel(self.timer);
-            self.timer = nil;
-            return;
-        }
+    @synchronized (self) {
+        dispatch_source_t timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
+        dispatch_source_set_timer(timer, DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
         
-        
-        if (seconds >= 16 && (has == NO || (has && !rewardedVideoCustomEvent.adInfo))) {
-            dispatch_source_cancel(self.timer);
-            self.timer = nil;
-            NSError *error = [NSError errorWithDomain:@"com.ofmIronsource.rewardedVideo" code:509 userInfo:@{NSLocalizedFailureReasonErrorKey:@"No ads to show"}];
-            [AlexISC2SBiddingRequestManager disposeLoadFailCall:error key:kATSDKFailedToLoadInterstitialADMsg unitID:rewardedVideoCustomEvent.networkUnitId];
-            seconds = 0;
-        }
-    });
-    dispatch_resume(self.timer);
+        dispatch_source_set_event_handler(timer, ^{
+            AlexISRewardedVideoCustomEvent *rewardedVideoCustomEvent = (AlexISRewardedVideoCustomEvent *)request.customEvent;
+            request.rvCheckTime += 2;
+            BOOL has = [IronSource hasRewardedVideo];
+            if (has && rewardedVideoCustomEvent.adInfo) {
+                NSString *price = [NSString stringWithFormat:@"%f",[rewardedVideoCustomEvent.adInfo.revenue doubleValue] * 1000];
+                [AlexISC2SBiddingRequestManager disposeLoadSuccessCall:price customObject:rewardedVideoCustomEvent.adInfo unitID:rewardedVideoCustomEvent.networkUnitId];
+                dispatch_source_cancel(timer);
+                return;
+            }
+            
+            if (request.rvCheckTime >= 16 && (has == NO || (has && !rewardedVideoCustomEvent.adInfo))) {
+                dispatch_source_cancel(timer);
+                NSError *error = [NSError errorWithDomain:@"com.ofmIronsource.rewardedVideo" code:509 userInfo:@{NSLocalizedFailureReasonErrorKey:@"No ads to show"}];
+                [AlexISC2SBiddingRequestManager disposeLoadFailCall:error key:kATSDKFailedToLoadInterstitialADMsg unitID:rewardedVideoCustomEvent.networkUnitId];
+                request.rvCheckTime = 0;
+            }
+        });
+        dispatch_resume(timer);
+    }
 }
 
 #pragma mark - create C2S bidinfo
@@ -142,13 +140,13 @@ int seconds = 0;
     [[AlexNetworkC2STool sharedInstance] removeRequestItemWithUnitID:unitID];
 }
 
-#pragma mark - lazy
-- (dispatch_source_t)timer {
-    if (_timer == nil) {
-        _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
-        dispatch_source_set_timer(_timer, DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
-    }
-    return _timer;
-}
+//#pragma mark - lazy
+//- (dispatch_source_t)timer {
+//    if (_timer == nil) {
+//        _timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_main_queue());
+//        dispatch_source_set_timer(_timer, DISPATCH_TIME_NOW, 2.0 * NSEC_PER_SEC, 0.0 * NSEC_PER_SEC);
+//    }
+//    return _timer;
+//}
 
 @end

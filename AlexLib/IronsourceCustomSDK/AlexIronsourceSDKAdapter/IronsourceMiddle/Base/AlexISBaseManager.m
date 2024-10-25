@@ -2,6 +2,7 @@
 #import "AlexISBaseManager.h"
 #import <IronSource/IronSource.h>
 #import "AlexISBannerCustomEvent.h"
+#import "ATGeneralTool.h"
 
 @interface AlexISBaseManager()
 
@@ -47,12 +48,8 @@
 }
 
 + (void)setPersonalizedStateWithUnitGroupModel:(ATUnitGroupModel *)unitGroupModel {
-    BOOL state = [[ATAPI sharedInstance] getPersonalizedAdState] == ATNonpersonalizedAdStateType ? YES : NO;
-    
-    BOOL set = NO;
-    BOOL limit = [[ATAppSettingManager sharedManager] limitThirdPartySDKDataCollection:&set networkFirmID:unitGroupModel.networkFirmID];
-    
-    if (state || (set && limit)) {
+    BOOL limitGdprConsent = [ATGeneralTool isLimitGDPRWithPersonalizedAdStateByNetworkFirmID:unitGroupModel.networkFirmID];
+    if (limitGdprConsent) {
         [IronSource setConsent:NO];
     } else {
         [IronSource setConsent:YES];
